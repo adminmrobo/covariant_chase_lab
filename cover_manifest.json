@@ -14,6 +14,11 @@
     "path": "practice/typhoon.html",
     "kg": true,
     "export": true
+   },
+   {
+    "path": "part2/index.html",
+    "kg": true,
+    "export": true
    }
   ],
   "files": [
@@ -22,7 +27,10 @@
    "data/meta.json",
    "data/typhoon/kg.json",
    "data/typhoon/refs.json",
-   "data/typhoon/meta.json"
+   "data/typhoon/meta.json",
+   "data/part2/kg.json",
+   "data/part2/refs.json",
+   "data/part2/meta.json"
   ]
  },
  "i18n": {
@@ -30,7 +38,7 @@
    "ko"
   ],
   "pages": {
-   "ko": 1
+   "ko": 2
   },
   "readme_langs": [
    "ko"
@@ -335,6 +343,165 @@
    "source_of": null,
    "status": "ok",
    "path": "assets/img/pr_01.webp"
+  },
+  {
+   "id": "cover_02",
+   "role": "cover",
+   "embedded_in": "part2/index.html",
+   "path": "assets/img/cover_02.webp",
+   "size": [
+    1600,
+    900
+   ],
+   "characters": [
+    "jupanbot",
+    "fly",
+    "doc",
+    "asst",
+    "sia",
+    "moa",
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "2편 cover, 16:9, 16-bit RPG pixel art ... see docs/GENSPARK_요청서_3.md",
+   "source_of": null,
+   "status": "pending"
+  },
+  {
+   "id": "og_02",
+   "role": "og",
+   "path": "assets/img/og_02.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "characters": [],
+   "robot": "jupanbot-v2",
+   "prompt_en": null,
+   "source_of": "cover_02",
+   "status": "pending"
+  },
+  {
+   "id": "s2_01",
+   "role": "scene",
+   "embedded_in": "part2/index.html",
+   "key": "figure[data-img=s2_01]",
+   "size": [
+    1200,
+    800
+   ],
+   "characters": [
+    "jupanbot",
+    "sia",
+    "fly"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "16-bit RPG pixel art, 3:2 scene, order experiment ... see docs/GENSPARK_요청서_3.md",
+   "source_of": null,
+   "status": "pending"
+  },
+  {
+   "id": "s2_02",
+   "role": "scene",
+   "embedded_in": "part2/index.html",
+   "key": "figure[data-img=s2_02]",
+   "size": [
+    1200,
+    800
+   ],
+   "characters": [
+    "jupanbot",
+    "asst",
+    "doc"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "16-bit RPG pixel art, 3:2 scene, gimbal lock ... see docs/GENSPARK_요청서_3.md",
+   "source_of": null,
+   "status": "pending"
+  },
+  {
+   "id": "s2_03",
+   "role": "scene",
+   "embedded_in": "part2/index.html",
+   "key": "figure[data-img=s2_03]",
+   "size": [
+    1200,
+    800
+   ],
+   "characters": [
+    "jupanbot",
+    "moa",
+    "fly"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "16-bit RPG pixel art, 3:2 scene, rotation interpolation ... see docs/GENSPARK_요청서_3.md",
+   "source_of": null,
+   "status": "pending"
+  },
+  {
+   "id": "s2_04",
+   "role": "scene",
+   "embedded_in": "part2/index.html",
+   "key": "figure[data-img=s2_04]",
+   "size": [
+    1200,
+    800
+   ],
+   "characters": [
+    "sia",
+    "asst",
+    "doc"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "16-bit RPG pixel art, 3:2 scene, cup trick quaternion ... see docs/GENSPARK_요청서_3.md",
+   "source_of": null,
+   "status": "pending"
+  },
+  {
+   "id": "s2_05",
+   "role": "scene",
+   "embedded_in": "part2/index.html",
+   "key": "figure[data-img=s2_05]",
+   "size": [
+    1200,
+    800
+   ],
+   "characters": [
+    "jupanbot",
+    "fly",
+    "moa"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "16-bit RPG pixel art, 3:2 scene, backflip chase ... see docs/GENSPARK_요청서_3.md",
+   "source_of": null,
+   "status": "pending"
+  },
+  {
+   "id": "s2_06",
+   "role": "scene",
+   "embedded_in": "part2/index.html",
+   "key": "figure[data-img=s2_06]",
+   "size": [
+    1200,
+    800
+   ],
+   "characters": [
+    "jupanbot",
+    "asst",
+    "sia",
+    "moa",
+    "fly",
+    "doc",
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "16-bit RPG pixel art, 3:2 scene, after verdict ... see docs/GENSPARK_요청서_3.md",
+   "source_of": null,
+   "status": "pending"
   }
  ],
  "updated": "2026-11-23"

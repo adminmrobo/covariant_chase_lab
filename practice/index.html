@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="ko"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>마지막 장 · 실전 연습장 — 주판봇의 초파리 추적 대작전 ①</title>
+<title>마지막 장 · 실전 연습장 — 주판봇의 초파리 추적 대작전 ①·②</title>
 <meta name="description" content="공변미분 다섯 단계를 가상 현장(관제탑·회전 작업대·항법 컴퓨터·측량 회사·항공 노선)에서 직접 운영해 보는 시뮬레이터.">
 <meta property="og:title" content="실전 연습장 — 주판봇의 초파리 추적 대작전 ①"><meta property="og:image" content="../assets/img/og_01.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -81,17 +81,17 @@ figure.scene.has-img .scfb,figure.scene.has-img .chip{display:none}
 </style></head><body>
 <header><div class="wrap">
 <span class="kicker">마지막 장 · 실전 연습장</span>
-<h1>실전 연습장 — 다섯 현장에서 진짜 변화 재기</h1>
-<p class="lead">본문의 다섯 단계를 가상 현장에서 직접 운영해 봅니다. <b style="color:var(--gfp)">초록 막대</b>는 현장 조건, <b style="color:var(--info)">파란 막대</b>는 내 결정입니다. 성적표와 그래프를 보며 미션 세 개를 풀어 보세요.</p>
+<h1>실전 연습장 — 아홉 현장에서 진짜 변화 재기</h1>
+<p class="lead">1편(①~⑤)과 2편(⑥~⑨)의 단계를 가상 현장에서 직접 운영해 봅니다. <b style="color:var(--gfp)">초록 막대</b>는 현장 조건, <b style="color:var(--info)">파란 막대</b>는 내 결정입니다. 성적표와 그래프를 보며 미션 세 개를 풀어 보세요.</p>
 <figure class="scene" data-img="pr_01"><div class="frame"><div class="scfb"><img data-who="robo" data-mood="calc" alt="" aria-hidden="true"><img data-who="asst" data-mood="report" alt="" aria-hidden="true"><img data-who="doc" data-mood="board" alt="" aria-hidden="true"><img data-who="fly" data-mood="point" alt="" aria-hidden="true"></div><span class="chip">장면 그림 준비 중 · pr_01</span></div><figcaption>실전 연습장 — 관제탑·작업대·항법 컴퓨터·측량·항공 노선, 다섯 현장의 조종석에 앉은 연구실 식구들.</figcaption></figure>
 <p class="back"><a href="../index.html#map">← 본문 큰 그림으로 돌아가기</a> · <a href="typhoon.html">부록 · 태풍 진로는 왜 어려울까 (헬게이트 포함) →</a> · <span class="stamp">숫자는 교육용 예시 · 실제 운항·측량 지침 아님</span></p>
 </div></header>
 <nav class="tabs" aria-label="현장 고르기"><div class="row" role="tablist" id="tabs"></div></nav>
 <main class="wrap" id="scenes"></main>
 <div class="wrap"><div class="closing">
-<h2>다섯 현장이 함께 묻는 질문</h2>
-<p>관제탑의 보고, 작업대의 판정, 항법 컴퓨터의 방위, 측량 지도의 각도, 항공 노선의 거리. 다섯 현장 모두 "숫자가 변했다"와 "진짜로 변했다"를 나누는 일이었습니다. 내 업무에서 받는 숫자 중, 눈금(기준)이 돌아서 생긴 변화가 섞여 있을 만한 것은 무엇일까요?</p>
-<p><b>모형의 한계</b>: 지구는 완전한 공으로, 레이더 비행은 직선으로, 작업대는 2차원 극좌표로 단순하게 봤습니다. 실제 항법·측량은 지구 타원체, 바람, 센서 잡음까지 함께 다룹니다. 숫자는 교육용 예시이며 운항·측량·경영 판단의 근거가 아닙니다.</p>
+<h2>아홉 현장이 함께 묻는 질문</h2>
+<p>관제탑의 보고, 작업대의 판정, 항법 컴퓨터의 방위, 측량 지도의 각도, 항공 노선의 거리, 그리고 짐벌 모터·애니메이션·위성·드론 제어까지. 모든 현장이 "숫자가 변했다"와 "진짜로 변했다"를 나누는 일이었습니다. 내 업무에서 받는 숫자 중, 눈금(기준)이 돌아서 생긴 변화가 섞여 있을 만한 것은 무엇일까요?</p>
+<p><b>모형의 한계</b>: 지구는 완전한 공으로, 레이더 비행은 직선으로, 작업대는 2차원 극좌표로, 드론은 2차 용수철 모형으로 단순하게 봤습니다. 실제 항법·측량은 지구 타원체, 바람, 센서 잡음까지 함께 다룹니다. 숫자는 교육용 예시이며 운항·측량·경영 판단의 근거가 아닙니다.</p>
 </div></div>
 <footer><div class="wrap">
 <p>글 · 안상선 (<a href="https://adminmrobo.github.io/who_am_i/who_am_i.html">https://adminmrobo.github.io/who_am_i/who_am_i.html</a>) · (주)M-Robo 대표</p>
@@ -263,6 +263,116 @@ var SC=[
   {t:'조건을 바꿔도 결론 유지: 위도나 경도 차이를 바꾼 뒤에도 +0.1% 이하 (위도 1° 이상)',ok:function(v,s,c){return c.m1&&c.moved&&v.phi>=1&&s.ex<=.1}}]}
 ];
 
+/* 회전 도우미: 쿼터니언 (w,x,y,z), 행렬, 오일러각(ZYX: 요·피치·롤, 피치 양수 = 기수 올림) */
+var RD=Math.PI/180;
+function qmul(a,b){return[a[0]*b[0]-a[1]*b[1]-a[2]*b[2]-a[3]*b[3],a[0]*b[1]+a[1]*b[0]+a[2]*b[3]-a[3]*b[2],a[0]*b[2]-a[1]*b[3]+a[2]*b[0]+a[3]*b[1],a[0]*b[3]+a[1]*b[2]-a[2]*b[1]+a[3]*b[0]]}
+function qconj(q){return[q[0],-q[1],-q[2],-q[3]]}
+function qnorm(q){var l=Math.hypot(q[0],q[1],q[2],q[3])||1;return[q[0]/l,q[1]/l,q[2]/l,q[3]/l]}
+function qaxis(ax,ang){var s=Math.sin(ang/2),l=Math.hypot(ax[0],ax[1],ax[2])||1;return[Math.cos(ang/2),ax[0]/l*s,ax[1]/l*s,ax[2]/l*s]}
+function qrot(q,v){var p=qmul(qmul(q,[0,v[0],v[1],v[2]]),qconj(q));return[p[1],p[2],p[3]]}
+function qdot(a,b){return a[0]*b[0]+a[1]*b[1]+a[2]*b[2]+a[3]*b[3]}
+function qangle(a,b){return 2*Math.acos(Math.min(1,Math.abs(qdot(a,b))))}
+function qslerp(a,b,t){var d=qdot(a,b);if(d<0){b=b.map(function(x){return-x});d=-d}if(d>.9995)return qnorm(a.map(function(x,i){return x+(b[i]-x)*t}));var th=Math.acos(d),s=Math.sin(th);return a.map(function(x,i){return(Math.sin((1-t)*th)*x+Math.sin(t*th)*b[i])/s})}
+/* 오일러(요 ψ, 피치 θ, 롤 φ) → 쿼터니언: R = Rz(ψ)·Ry(−θ)·Rx(φ) */
+function qeuler(psi,th,phi){return qmul(qmul(qaxis([0,0,1],psi),qaxis([0,1,0],-th)),qaxis([1,0,0],phi))}
+/* 쿼터니언 → 오일러 (같은 약속). 피치 ±90°에서 요·롤이 정해지지 않는다 */
+function eulerq(q){var x=qrot(q,[1,0,0]),y=qrot(q,[0,1,0]),z=qrot(q,[0,0,1]);var th=Math.asin(Math.max(-1,Math.min(1,x[2])));var psi,phi;
+ if(Math.abs(x[2])<.99999){psi=Math.atan2(x[1],x[0]);phi=Math.atan2(y[2],z[2])}else{psi=Math.atan2(-y[0],y[1]);phi=0}return[psi,th,phi]}
+function wrap(a){return Math.atan2(Math.sin(a),Math.cos(a))}
+/* 몸체 기준 각속도 ω(rad/s)로 dt 동안 돌기 */
+function qstep(q,w,dt){var a=Math.hypot(w[0],w[1],w[2])*dt;if(a<1e-12)return q;return qnorm(qmul(q,qaxis(w,a)))}
+/* 오일러 변화율 → 몸체 각속도 (ZYX, 피치 양수=기수 올림이므로 θ 부호 주의) */
+function eulerRatesToBody(phi,th,psi_d,th_d,phi_d){var t=-th,td=-th_d;return[phi_d-psi_d*Math.sin(t),td*Math.cos(phi)+psi_d*Math.cos(t)*Math.sin(phi),-td*Math.sin(phi)+psi_d*Math.cos(t)*Math.cos(phi)]}
+/* 자세 추격 시뮬레이션: mode 'euler' 또는 'geo' */
+function chase(mode,o){o=o||{};var T=o.T||10,dt=o.dt||.01,k=o.k||4,wmax=(o.wmax||360)*RD,loop=(o.loop||45)*RD,spin=(o.spin||10)*RD;var q=[1,0,0,0],out=[];
+ function target(t){return qmul(qaxis([0,0,1],spin*t),qaxis([0,1,0],-loop*t))}
+ for(var i=0;i<=T/dt;i++){var t=i*dt,qd=target(t),w;
+  if(mode==='geo'){var qe=qmul(qconj(q),qd);if(qe[0]<0)qe=qe.map(function(x){return-x});var ang=2*Math.acos(Math.min(1,qe[0])),s=Math.sqrt(Math.max(1e-12,1-qe[0]*qe[0])),ax=[qe[1]/s,qe[2]/s,qe[3]/s];
+   w=[ax[0]*k*ang,ax[1]*k*ang,ax[2]*k*ang];}
+  else{var e=eulerq(q),ed=eulerq(qd),dpsi=wrap(ed[0]-e[0]),dth=wrap(ed[1]-e[1]),dphi=wrap(ed[2]-e[2]);w=eulerRatesToBody(e[2],e[1],k*dpsi,k*dth,k*dphi)}
+  var n=Math.hypot(w[0],w[1],w[2]);if(n>wmax)w=w.map(function(x){return x*wmax/n});
+  out.push({t:t,err:qangle(q,qd)/RD,q:q,qd:qd});q=qstep(q,w,dt)}
+ return out}
+if(false)module.exports={qmul:qmul,qaxis:qaxis,qrot:qrot,qeuler:qeuler,eulerq:eulerq,qslerp:qslerp,qangle:qangle,chase:chase,eulerRatesToBody:eulerRatesToBody,RD:RD,qconj:qconj,qnorm:qnorm,qdot:qdot};
+
+/* ── 2편 현장 ── */
+SC.push(
+{id:'gimbal',tab:'2편 ⑥ 촬영 짐벌 공장',backUrl:'../part2/index.html#lv2',backName:'2편 ② 짐벌락',title:'촬영 짐벌 공장 — 요 모터를 얼마나 빠른 것으로 살까',
+ situ:'드론 촬영용 짐벌을 만듭니다. 드론이 일정한 빠르기로 도는데, 카메라 기수가 높이 들릴수록(피치) 요 모터는 1/cos(피치)배 빨리 돌아야 따라갑니다. 빠른 모터는 비쌉니다. <b>모터 최고 속도</b>를 정하세요.',
+ env:[{k:'th',l:'카메라 피치',u:'°',min:0,max:89,step:1,v:60},{k:'w',l:'드론 회전 빠르기',u:'°/s',min:10,max:90,step:5,v:30}],
+ dec:{k:'M',l:'요 모터 최고 속도',u:'°/s',min:20,max:1500,step:1,v:100},m3keys:['th'],
+ calc:function(v){var need=v.w/Math.cos(v.th*D),ok=v.M>=need,cost=.05*v.M,profit=(ok?100:0)-cost;return{need:need,ok:ok,cost:cost,profit:profit,best:100-.05*Math.ceil(need)}},
+ kpis:function(v,s){return[{l:'필요한 요 속도',v:Math.round(s.need)+'°/s'},{l:'추적',v:s.ok?'성공':'놓침',g:s.ok},{l:'모터 값 (예시)',v:s.cost.toFixed(1)+'점'},{l:'이익 (예시)',v:s.profit.toFixed(1)+'점',g:s.ok&&v.M<=s.need*1.1}]},
+ curve:function(v,s){return{x0:20,x1:1500,f:function(M){return(M>=s.need?100:0)-.05*M},xopt:Math.min(1500,s.need),xcur:v.M,xl:'요 모터 최고 속도 (°/s)',yl:'이익 (점, 예시)',fx:function(x){return num(x)},fy:function(y){return num(y)}}},
+ struct:function(svg,v,s){var z=svgSize(svg),W=z.W,H=z.H,cx=W*.32,cy=H*.78,L=Math.min(W*.28,H*.6),a=v.th*D,o='';o+=line(cx-L*.2,cy,cx+L*1.1,cy,'#9aa7b3',1.5);o+=arr(cx,cy,cx+L*Math.cos(a),cy-L*Math.sin(a),'#c9302c',3);
+  o+='<path d="M'+(cx+30)+' '+cy+' A30 30 0 0 0 '+(cx+30*Math.cos(a))+' '+(cy-30*Math.sin(a))+'" fill="none" stroke="#a35c00" stroke-width="2"/>'+txt(cx+36,cy-8,'피치 '+v.th+'°','#a35c00','start',12);
+  o+='<image href="'+src('robo','calc')+'" x="'+(cx-40)+'" y="'+(cy-30)+'" width="30" height="30" style="image-rendering:pixelated"/>';
+  var bx=W*.62,bw=W*.32,mx=Math.max(s.need,v.M)*1.1;o+=txt(bx,24,'필요','#c9302c','start',12)+'<rect x="'+bx+'" y="30" width="'+Math.min(bw,bw*s.need/mx)+'" height="16" fill="#c9302c" rx="4"/>'+txt(bx,70,'내 모터','#1e55c8','start',12)+'<rect x="'+bx+'" y="76" width="'+bw*v.M/mx+'" height="16" fill="#1e55c8" rx="4"/>'+txt(bx,120,s.ok?'따라갈 수 있음':'놓침',s.ok?'#13733a':'#c9302c','start',14);
+  svg.setAttribute('viewBox','0 0 '+W+' '+H);svg.innerHTML=o},
+ talk:function(v,s){var near=s.ok&&v.M<=s.need*1.1;if(near)return{doc:['judge','판정: 필요한 만큼만 빠른 모터예요. 필요 속도 = 드론 빠르기 ÷ cos(피치).'],asst:['report','필요 '+Math.round(s.need)+'°/s, 내 모터 '+v.M+'°/s, 이익 '+s.profit.toFixed(1)+'점이에요.'],fly:['arms','피치를 더 올리면 어떻게 될까? 한번 봐.'],robo:['happy','딱 맞게 샀다!']};
+  if(!s.ok)return{doc:['think','모터가 느려 놓칩니다. 피치 '+v.th+'°에서는 '+Math.round(s.need)+'°/s가 필요해요.'],asst:['report','부족한 속도 '+Math.round(s.need-v.M)+'°/s예요.'],fly:['magnify','드론은 '+v.w+'°/s로 도는데 왜 모터는 더 빨라야 할까?'],robo:['coin','드론 빠르기만큼이면 충분하다!']};
+  return{doc:['think','따라가지만 너무 비싼 모터예요. '+Math.round(s.need)+'°/s 가까이로 줄여도 됩니다.'],asst:['report','남는 속도 '+Math.round(v.M-s.need)+'°/s예요.'],fly:['point','돈을 너무 썼네.'],robo:['wow','빠를수록 좋은 줄 알았는데!']}},
+ missions:[{t:'이익이 가장 큰 모터 고르기 (필요 속도 이상, 그 1.1배 이하)',ok:function(v,s,c){return c.touched&&s.ok&&v.M<=s.need*1.1}},
+  {t:'함정 관찰: 피치 85° 이상에서는 필요한 요 속도가 드론 빠르기의 10배를 넘습니다. 그 상황 만들기',ok:function(v,s,c){return c.touched&&v.th>=85&&s.need/v.w>=10}},
+  {t:'조건을 바꿔도 결론 유지: 피치를 바꾼 뒤에도 다시 가장 알맞은 모터 고르기',ok:function(v,s,c){return c.m1&&c.moved&&s.ok&&v.M<=s.need*1.1}}]},
+
+{id:'interp',tab:'2편 ⑦ 회전 보간 스튜디오',backUrl:'../part2/index.html#lv3',backName:'2편 ③ 회전들의 공간',title:'애니메이션 스튜디오 — 캐릭터 머리를 가장 덜 돌리는 보간',
+ situ:'캐릭터 머리를 처음 자세에서 목표 자세로 돌리는 장면을 만듭니다. <b>보간 섞기</b> 0은 세 각도를 똑같이 나눠 돌리기, 1은 측지선(slerp)입니다. 회전 총량이 클수록 화면이 어지럽습니다.',
+ env:[{k:'y',l:'목표 요',u:'°',min:-180,max:180,step:5,v:180},{k:'p',l:'목표 피치',u:'°',min:-85,max:85,step:5,v:45},{k:'r',l:'목표 롤',u:'°',min:-180,max:180,step:5,v:180}],
+ dec:{k:'m',l:'보간 섞기',u:'',min:0,max:1,step:.05,v:0},m3keys:['y','p','r'],
+ calc:function(v){function len(m){var prev=[1,0,0,0],L=0,qT=qeuler(v.y*D,v.p*D,v.r*D);for(var i=1;i<=60;i++){var t=i/60,q=qslerp(qeuler(v.y*D*t,v.p*D*t,v.r*D*t),qslerp([1,0,0,0],qT,t),m);L+=qangle(prev,q);prev=q}return L/D}var L=len(v.m),g=qangle([1,0,0,0],qeuler(v.y*D,v.p*D,v.r*D))/D;return{L:L,g:g,ex:g>.5?Math.max(0,(L/g-1)*100):0,len:len}},
+ kpis:function(v,s){return[{l:'회전 총량',v:s.L.toFixed(0)+'°'},{l:'측지선',v:s.g.toFixed(0)+'°'},{l:'더 돈 양',v:s.ex.toFixed(1)+'%',g:s.ex<=1},{l:'어지러움 (예시)',v:s.ex<=1?'편안':s.ex<20?'보통':'어지러움',g:s.ex<=1}]},
+ curve:function(v,s){return{x0:0,x1:1,f:function(m){return s.len(m)},xopt:1,xcur:v.m,xl:'보간 섞기 (0 = 세 각도, 1 = 측지선)',yl:'회전 총량 (°)',auto:true,fx:f2,fy:function(y){return num(y)}}},
+ struct:function(svg,v,s){var z=svgSize(svg),W=z.W,H=z.H,cx=W/2,cy=H/2,R=Math.min(W,H)*.42,o='<circle cx="'+cx+'" cy="'+cy+'" r="'+R+'" fill="#f3f7fb" stroke="#9fb1c2"/>',qT=qeuler(v.y*D,v.p*D,v.r*D);
+  function P(q){var n=qrot(q,[1,0,0]);var ca=Math.cos(-125*D),sa=Math.sin(-125*D),x1=n[0]*ca-n[1]*sa,y1=n[0]*sa+n[1]*ca;return[cx+R*x1,cy-R*(n[2]*Math.cos(.38)+y1*Math.sin(.38))]}
+  [[0,'#c9302c',.6],[1,'#13733a',.6],[v.m,'#1e55c8',1]].forEach(function(x){var pts=[];for(var i=0;i<=60;i++){var t=i/60;pts.push(P(qslerp(qeuler(v.y*D*t,v.p*D*t,v.r*D*t),qslerp([1,0,0,0],qT,t),x[0])))}o+=poly(pts,x[1],x[2]===1?3:2,null,x[2])});
+  o+=txt(8,16,'빨강 = 세 각도, 초록 = 측지선, 파랑 = 내 보간','#5b6874','start',11)+txt(W-8,H-8,'기수가 지나간 길 (구 위)','#5b6874','end',11);svg.setAttribute('viewBox','0 0 '+W+' '+H);svg.innerHTML=o},
+ talk:function(v,s){if(s.g<.5)return{doc:['think','목표가 처음 자세와 같아요. 다른 목표를 넣어 보세요.'],asst:['report','회전할 것이 없어요.'],fly:['point','목표를 바꿔 봐.'],robo:['coin','움직이지 않으면 완벽하다!']};
+  if(s.ex<=1)return{doc:['judge','판정: 측지선이에요. 한 축으로 고르게 돌아 가장 덜 돕니다.'],asst:['report','회전 총량 '+s.L.toFixed(0)+'°, 측지선 대비 +'+s.ex.toFixed(1)+'%예요.'],fly:['arms','휘청임이 없네.'],robo:['sigh','세 숫자를 똑같이 나누는 게 공평한 줄 알았는데…']};
+  return{doc:['think','측지선보다 '+s.ex.toFixed(0)+'% 더 돌아요. 섞기를 1 쪽으로 옮겨 보세요.'],asst:['report','회전 총량 '+s.L.toFixed(0)+'°, 측지선 '+s.g.toFixed(0)+'°예요.'],fly:['magnify','이 캐릭터, 고개가 왜 이렇게 흔들려?'],robo:['coin','세 각도를 똑같이 나누면 공평하다!']}},
+ missions:[{t:'회전 총량을 측지선 대비 +1% 이하로',ok:function(v,s,c){return c.touched&&s.g>.5&&s.ex<=1}},
+  {t:'함정 관찰: 목표가 한 축 회전뿐이면(나머지 두 각도 0) 보간 섞기를 바꿔도 회전 총량이 같습니다. 그 상황 만들기',ok:function(v,s,c){var nz=[v.y,v.p,v.r].filter(function(x){return x!==0}).length;return c.touched&&nz===1&&v.m<.9&&s.ex<1}},
+  {t:'조건을 바꿔도 결론 유지: 목표 자세를 바꾼 뒤에도 +1% 이하',ok:function(v,s,c){return c.m1&&c.moved&&s.g>.5&&s.ex<=1}}]},
+
+{id:'quatsat',tab:'2편 ⑧ 위성 자세 컴퓨터',backUrl:'../part2/index.html#lv4',backName:'2편 ④ 쿼터니언',title:'위성 자세 컴퓨터 — 쿼터니언 길이를 얼마나 자주 1로 맞출까',
+ situ:'위성은 자세를 쿼터니언으로 계속 갱신합니다. 계산할 때마다 아주 작은 오차가 쌓여 길이가 1에서 벗어나면, 회전이 아니라 크기까지 바꾸는 엉뚱한 값이 됩니다. 길이를 1로 맞추는(정규화) 계산은 비용이 듭니다. <b>몇 번 갱신마다 정규화할지</b> 정하세요.',
+ env:[{k:'d',l:'갱신 한 번의 길이 오차 (×10⁻⁶)',u:'',min:1,max:100,step:1,v:20},{k:'c',l:'정규화 한 번의 계산 비용 (예시)',u:'',min:1,max:20,step:1,v:5}],
+ dec:{k:'N',l:'정규화 간격 (갱신 횟수)',u:'회',min:1,max:1000,step:1,v:500},m3keys:['d'],
+ calc:function(v){var e=.005*v.d*v.N,c=100*v.c/v.N,Ns=Math.sqrt(20000*v.c/v.d),best=.005*v.d*Ns+100*v.c/Ns;return{e:e,c:c,t:e+c,Ns:Ns,best:best,len:v.d*1e-6*v.N}},
+ kpis:function(v,s){return[{l:'최대 길이 오차',v:(s.len*100).toFixed(3)+'%',g:s.len<.01},{l:'오차 비용',v:s.e.toFixed(1)+'점'},{l:'계산 비용',v:s.c.toFixed(1)+'점'},{l:'합계 (작을수록 좋음)',v:s.t.toFixed(1)+'점',g:s.t<=s.best*1.02}]},
+ curve:function(v,s){return{x0:1,x1:1000,f:function(N){return .005*v.d*N+100*v.c/N},xopt:s.Ns,xcur:v.N,xl:'정규화 간격 (회)',yl:'합계 비용 (점)',auto:true,fx:function(x){return num(x)},fy:function(y){return num(y)}}},
+ struct:function(svg,v,s){var z=svgSize(svg),W=z.W,H=z.H,ml=40,o='',top=20,bot=H-30,X=function(i){return ml+i/1000*(W-ml-10)},mx=Math.max(1e-6,v.d*1e-6*1000),Y=function(l){return bot-(l/mx)*(bot-top)};
+  o+=line(ml,top,ml,bot,'#9aa7b3',1)+line(ml,bot,W-10,bot,'#9aa7b3',1)+txt(ml-4,bot,'1.000','#5b6874','end',10)+txt(ml-4,top+8,'+'+(mx*100).toFixed(2)+'%','#5b6874','end',10);
+  var pts=[],i;for(i=0;i<=1000;i+=Math.max(1,Math.round(v.N/6))){var k=i%v.N;pts.push([X(i),Y(v.d*1e-6*k)]);}var p2=[];for(i=0;i<=1000;i+=5){p2.push([X(i),Y(v.d*1e-6*(i%v.N))])}o+=poly(p2,'#1e55c8',2);
+  o+=line(ml,Y(.01),W-10,Y(.01),'#c9302c',1.5,'4 4')+txt(W-12,Y(.01)-4,'1% 선','#c9302c','end',11);
+  o+=txt(ml+4,top+6,'쿼터니언 길이 − 1 (갱신 1,000번 동안)','#5b6874','start',11);svg.setAttribute('viewBox','0 0 '+W+' '+H);svg.innerHTML=o},
+ talk:function(v,s){if(s.t<=s.best*1.02)return{doc:['judge','판정: 오차 비용과 계산 비용의 균형점이에요. 간격 ≈ √(비용 비율).'],asst:['report','간격 '+v.N+'회, 합계 '+s.t.toFixed(1)+'점, 가장 좋은 간격은 약 '+Math.round(s.Ns)+'회예요.'],fly:['arms','너무 자주도, 너무 드물게도 아니네.'],robo:['happy','균형 잡힌 주판질이다!']};
+  if(v.N>s.Ns)return{doc:['think','너무 드물게 맞춰서 길이 오차가 '+(s.len*100).toFixed(2)+'%까지 쌓여요.'],asst:['report','오차 비용 '+s.e.toFixed(1)+'점이에요.'],fly:['magnify','길이가 1이 아니면 그게 아직 회전이야?'],robo:['coin','계산을 아끼면 이득이다!']};
+  return{doc:['think','너무 자주 맞춰서 계산 비용이 '+s.c.toFixed(1)+'점이에요.'],asst:['report','계산 비용이 오차 비용보다 커요.'],fly:['point','계산기가 지치겠어.'],robo:['wow','자주 할수록 좋은 줄 알았는데!']}},
+ missions:[{t:'합계 비용을 가장 작은 값의 +2% 이내로',ok:function(v,s,c){return c.touched&&s.t<=s.best*1.02}},
+  {t:'함정 관찰: 정규화를 거의 안 하면(간격 1,000회) 길이 오차가 1%를 넘습니다. 그 상황 만들기',ok:function(v,s,c){return c.touched&&v.N>=1000&&s.len>=.01}},
+  {t:'조건을 바꿔도 결론 유지: 갱신 오차를 바꾼 뒤에도 다시 +2% 이내',ok:function(v,s,c){return c.m1&&c.moved&&s.t<=s.best*1.02}}]},
+
+{id:'gain',tab:'2편 ⑨ 드론 자세 이득',backUrl:'../part2/index.html#lv5',backName:'2편 ⑤ 기하학적 제어',title:'드론 자세 제어실 — 용수철 세기(이득)를 얼마로 할까',
+ situ:'기하학적 제어 드론이 60° 어긋난 자세를 바로잡아야 합니다. 이득 k가 크면 빨리 맞추지만 모터 힘(에너지)을 많이 씁니다. 초파리가 달아나기 전(제한 시간 T)에 자세를 맞추면서 힘을 가장 적게 쓰는 <b>이득</b>을 정하세요.',
+ env:[{k:'T',l:'초파리가 달아나는 시간',u:'초',min:.5,max:3,step:.1,v:1.5},{k:'J',l:'드론 관성 (무게감)',u:'',min:.5,max:3,step:.1,v:1}],
+ dec:{k:'k',l:'이득 k (용수철 세기)',u:'',min:1,max:200,step:1,v:5},m3keys:['J'],
+ calc:function(v){var z=.7,wn=Math.sqrt(v.k/v.J),ts=4/(z*wn),ok=ts<=v.T,tq=v.k*Math.sin(60*D),score=ok?100-.3*tq:0,ks=v.J*Math.pow(4/(z*v.T),2);return{ts:ts,ok:ok,tq:tq,score:score,ks:ks}},
+ kpis:function(v,s){return[{l:'자세 맞추는 시간',v:s.ts.toFixed(2)+'초',g:s.ok},{l:'제한 시간',v:v.T.toFixed(1)+'초'},{l:'최대 회전력 (예시)',v:s.tq.toFixed(1)},{l:'점수 (예시)',v:s.score.toFixed(1)+'점',g:s.ok&&v.k<=s.ks*1.1}]},
+ curve:function(v,s){return{x0:1,x1:200,f:function(k){var ts=4/(.7*Math.sqrt(k/v.J));return ts<=v.T?100-.3*k*Math.sin(60*D):0},xopt:Math.min(200,s.ks),xcur:v.k,xl:'이득 k',yl:'점수 (예시)',fx:function(x){return num(x)},fy:function(y){return num(y)}}},
+ struct:function(svg,v,s){var z=svgSize(svg),W=z.W,H=z.H,ml=40,top=16,bot=H-28,X=function(t){return ml+t/4*(W-ml-10)},Y=function(a){return bot-(a+10)/80*(bot-top)},o='';
+  o+=line(ml,top,ml,bot,'#9aa7b3',1)+line(ml,bot,W-10,bot,'#9aa7b3',1)+txt(ml-4,Y(60)+4,'60°','#5b6874','end',10)+txt(ml-4,Y(0)+4,'0°','#5b6874','end',10)+txt(W-10,H-8,'시간 (초)','#5b6874','end',11);
+  o+=line(X(v.T),top,X(v.T),bot,'#c9302c',1.5,'4 4')+txt(X(v.T)+4,top+10,'달아남','#c9302c','start',11);
+  var zt=.7,wn=Math.sqrt(v.k/v.J),wd=wn*Math.sqrt(1-zt*zt),pts=[];for(var i=0;i<=200;i++){var t=i/200*4,a=60*Math.exp(-zt*wn*t)*(Math.cos(wd*t)+zt/Math.sqrt(1-zt*zt)*Math.sin(wd*t));pts.push([X(t),Y(a)])}o+=poly(pts,'#1e55c8',2.5);
+  o+=line(ml,Y(60*.02),W-10,Y(60*.02),'#13733a',1,'2 3');o+=txt(ml+4,top+6,'자세 오차 (°)','#5b6874','start',11);svg.setAttribute('viewBox','0 0 '+W+' '+H);svg.innerHTML=o},
+ talk:function(v,s){var near=s.ok&&v.k<=s.ks*1.1;if(near)return{doc:['judge','판정: 시간 안에 맞추면서 힘을 가장 적게 써요. 필요 이득 ≈ 관성 × (4 ÷ (0.7 × T))².'],asst:['report','이득 '+v.k+', 맞추는 시간 '+s.ts.toFixed(2)+'초, 점수 '+s.score.toFixed(1)+'점이에요.'],fly:['coffee','흥, 딱 맞춰 잡혔네.'],robo:['happy','용수철도 딱 알맞게!']};
+  if(!s.ok)return{doc:['think','너무 약해서 '+s.ts.toFixed(2)+'초가 걸려요. 초파리는 '+v.T.toFixed(1)+'초면 달아납니다.'],asst:['report','필요 이득은 약 '+Math.ceil(s.ks)+'이에요.'],fly:['arms','느려, 느려~'],robo:['coin','힘을 아끼는 게 최고다!']};
+  return{doc:['think','시간 안에 맞추지만 힘을 너무 써요. 이득을 '+Math.ceil(s.ks)+' 가까이로 낮춰도 됩니다.'],asst:['report','최대 회전력 '+s.tq.toFixed(1)+'이에요.'],fly:['point','배터리가 금방 닳겠는걸.'],robo:['wow','셀수록 좋은 줄 알았는데!']}},
+ missions:[{t:'제한 시간 안에 맞추면서 이득을 가장 작게 (필요 이득의 1.1배 이하)',ok:function(v,s,c){return c.touched&&s.ok&&v.k<=s.ks*1.1}},
+  {t:'함정 관찰: 달아나는 시간이 절반(0.75초 이하)이 되면 필요한 이득은 네 배가 됩니다. 그 상황 만들기',ok:function(v,s,c){return c.touched&&v.T<=.75&&s.ks>=4*v.J*Math.pow(4/(.7*1.5),2)*.99}},
+  {t:'조건을 바꿔도 결론 유지: 드론 관성을 바꾼 뒤에도 다시 알맞은 이득 고르기',ok:function(v,s,c){return c.m1&&c.moved&&s.ok&&v.k<=s.ks*1.1}}]}
+);
+
 /* ── 화면 만들기 ── */
 var who={doc:'박사',asst:'조수 하루',fly:'초파리 연구원',robo:'주판봇'};
 function slider(sc,o,kind){return '<div class="sl '+kind+'"><label for="'+sc.id+'-'+o.k+'">'+o.l+' <span class="v" id="'+sc.id+'-'+o.k+'-v"></span></label><input type="range" id="'+sc.id+'-'+o.k+'" min="'+o.min+'" max="'+o.max+'" step="'+o.step+'" value="'+o.v+'"></div>'}
@@ -271,7 +381,7 @@ SC.forEach(function(sc){
  tabs.insertAdjacentHTML('beforeend','<button role="tab" data-t="'+sc.id+'" aria-selected="false">'+sc.tab+'</button>');
  main.insertAdjacentHTML('beforeend','<section class="scene" id="s-'+sc.id+'" role="tabpanel"><h2>'+sc.title+'</h2><div class="situ">'+sc.situ+'</div><div class="grid"><div class="ctrl"><p class="legend"><b class="g">초록 = 현장 조건</b> · <b class="b">파랑 = 내 결정</b></p>'+sc.env.map(function(o){return slider(sc,o,'env')}).join('')+slider(sc,sc.dec,'dec')+'<button class="bt-reset" id="'+sc.id+'-reset" style="min-height:44px;border-radius:10px;border:1px solid var(--rule);background:#fff;font:inherit;cursor:pointer">처음 값으로</button></div>'+
  '<div><div class="kpis" id="'+sc.id+'-kpi"></div><div class="charts"><div class="chart"><h3>구조 그림</h3><svg id="'+sc.id+'-st" role="img" aria-label="'+sc.title+' 구조 그림"></svg></div><div class="chart"><h3>결정별 성과 곡선</h3><svg id="'+sc.id+'-cv" role="img" aria-label="내 결정에 따른 성과 곡선"></svg></div></div></div></div>'+
- '<div class="talk" id="'+sc.id+'-talk"></div><div class="missions"><b>미션</b><ol id="'+sc.id+'-mis"></ol></div><p class="back">배운 곳 다시 보기: <a href="../index.html#'+sc.back+'">본문 '+sc.tab.slice(0,1)+' 단계</a> · <a href="../index.html#sum">정리</a></p></section>');
+ '<div class="talk" id="'+sc.id+'-talk"></div><div class="missions"><b>미션</b><ol id="'+sc.id+'-mis"></ol></div><p class="back">배운 곳 다시 보기: '+(sc.backUrl?'<a href="'+sc.backUrl+'">'+sc.backName+'</a> · <a href="../part2/index.html#sum">2편 정리</a>':'<a href="../index.html#'+sc.back+'">1편 '+sc.tab.slice(0,1)+' 단계</a> · <a href="../index.html#sum">1편 정리</a>')+'</p></section>');
  sc.vals={};sc.env.forEach(function(o){sc.vals[o.k]=o.v});sc.vals[sc.dec.k]=sc.dec.v;
  sc.ctx={touched:false,m1:false,moved:false,snap:null};sc.done=[false,false,false];
  sc.env.concat([sc.dec]).forEach(function(o){$(sc.id+'-'+o.k).addEventListener('input',function(e){sc.vals[o.k]=+e.target.value;sc.ctx.touched=true;upd(sc)})});

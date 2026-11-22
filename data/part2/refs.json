@@ -1,0 +1,244 @@
+[
+ {
+  "id": "lee2010geometric",
+  "type": "paper-conference",
+  "title": "Geometric tracking control of a quadrotor UAV on SE(3)",
+  "author": [
+   {
+    "family": "Lee",
+    "given": "Taeyoung"
+   },
+   {
+    "family": "Leok",
+    "given": "Melvin"
+   },
+   {
+    "family": "McClamroch",
+    "given": "N. Harris"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2010
+    ]
+   ]
+  },
+  "container-title": "Proceedings of the 49th IEEE Conference on Decision and Control (CDC 2010)",
+  "page": "5420-5425",
+  "DOI": "10.1109/CDC.2010.5717652",
+  "lab": {
+   "work": "lab:work/lee2010geometric",
+   "role": "primary",
+   "supports": [
+    "lab:claim/lee-geometric",
+    "lab:claim/chase-sim"
+   ],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": true,
+    "pages": true,
+    "doi": true
+   },
+   "checkedBy": "웹 검색으로 원문과 대조 (2026-11-23)",
+   "checkedSource": "web"
+  }
+ },
+ {
+  "id": "alsj-gimbal",
+  "type": "webpage",
+  "title": "Gimbal Angles, Gimbal Lock, and a Fourth Gimbal for Christmas",
+  "author": [
+   {
+    "family": "Jones",
+    "given": "Eric M."
+   },
+   {
+    "family": "Fjeld",
+    "given": "Paul"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2011
+    ]
+   ]
+  },
+  "container-title": "Apollo Lunar Surface Journal (NASA)",
+  "URL": "https://www.nasa.gov/history/alsj/sd.html",
+  "lab": {
+   "work": "lab:work/alsj-gimbal",
+   "role": "background",
+   "supports": [
+    "lab:claim/apollo-cos-division",
+    "lab:claim/apollo-70-85",
+    "lab:claim/collins-fourth-gimbal"
+   ],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": true,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "웹 검색으로 원문과 대조 (2026-11-23)",
+   "checkedSource": "web"
+  }
+ },
+ {
+  "id": "shoemake1985animating",
+  "type": "paper-conference",
+  "title": "Animating rotation with quaternion curves",
+  "author": [
+   {
+    "family": "Shoemake",
+    "given": "Ken"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1985
+    ]
+   ]
+  },
+  "container-title": "ACM SIGGRAPH Computer Graphics",
+  "volume": "19",
+  "issue": "3",
+  "page": "245-254",
+  "DOI": "10.1145/325165.325242",
+  "lab": {
+   "work": "lab:work/shoemake1985animating",
+   "role": "background",
+   "supports": [
+    "lab:claim/shoemake-slerp"
+   ],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": true,
+    "pages": true,
+    "doi": true
+   },
+   "checkedBy": "웹 검색으로 원문과 대조 (2026-11-23)",
+   "checkedSource": "web"
+  }
+ },
+ {
+  "id": "diebel2006representing",
+  "type": "report",
+  "title": "Representing Attitude: Euler Angles, Unit Quaternions, and Rotation Vectors",
+  "author": [
+   {
+    "family": "Diebel",
+    "given": "James"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2006
+    ]
+   ]
+  },
+  "publisher": "Stanford University",
+  "lab": {
+   "work": "lab:work/diebel2006representing",
+   "role": "background",
+   "supports": [
+    "lab:claim/quat-no-singularity"
+   ],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": false,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "웹 검색으로 원문과 대조 (2026-11-23)",
+   "checkedSource": "web"
+  }
+ },
+ {
+  "id": "arxiv2206-15077",
+  "type": "article",
+  "title": "Rigid-body attitude control: overview (arXiv:2206.15077)",
+  "author": [
+   {
+    "literal": "arXiv:2206.15077 저자"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2022
+    ]
+   ]
+  },
+  "URL": "https://arxiv.org/abs/2206.15077",
+  "lab": {
+   "work": "lab:work/arxiv2206-15077",
+   "role": "background",
+   "supports": [
+    "lab:claim/antipodal-same"
+   ],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": false,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "웹 검색 발췌로 내용만 대조, 서지 미확인",
+   "checkedSource": "web"
+  }
+ },
+ {
+  "id": "arxiv1708-08680",
+  "type": "article",
+  "title": "Quaternions and Attitude Representation",
+  "author": [
+   {
+    "literal": "arXiv:1708.08680 저자"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2017
+    ]
+   ]
+  },
+  "URL": "https://arxiv.org/abs/1708.08680",
+  "lab": {
+   "work": "lab:work/arxiv1708-08680",
+   "role": "background",
+   "supports": [
+    "lab:claim/euler-discontinuity"
+   ],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": false,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "웹 검색 발췌로 내용만 대조, 서지 미확인",
+   "checkedSource": "web"
+  }
+ }
+]

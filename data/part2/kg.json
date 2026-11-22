@@ -1,0 +1,1693 @@
+{
+ "version": "1.0",
+ "page": "02_drone_gimbal",
+ "nodes": [
+  {
+   "id": "lab:concept/attitude",
+   "type": "Concept",
+   "label": {
+    "ko": "자세",
+    "en": "Attitude (orientation)"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#why",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "물체가 어느 쪽을 보고 얼마나 기울었는지."
+   }
+  },
+  {
+   "id": "lab:concept/euler-angles",
+   "type": "Concept",
+   "label": {
+    "ko": "오일러각 (요·피치·롤)",
+    "en": "Euler angles"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv1",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "자세를 세 번의 회전 각도로 적는 방법. 순서 약속이 함께 필요하다."
+   }
+  },
+  {
+   "id": "lab:concept/rotation-noncommutativity",
+   "type": "Concept",
+   "label": {
+    "ko": "회전 순서의 비가환성",
+    "en": "Non-commutativity of rotations"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "3차원 회전은 순서를 바꾸면 결과가 달라진다."
+   }
+  },
+  {
+   "id": "lab:concept/gimbal-lock",
+   "type": "Concept",
+   "label": {
+    "ko": "짐벌락",
+    "en": "Gimbal lock"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "피치 ±90°에서 두 회전축이 겹쳐 자유도 하나를 잃는 현상. 좌표가 고장 난 것."
+   }
+  },
+  {
+   "id": "lab:concept/angular-velocity",
+   "type": "Concept",
+   "label": {
+    "ko": "각속도",
+    "en": "Angular velocity"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "물체가 진짜로 도는 빠르기와 축."
+   }
+  },
+  {
+   "id": "lab:concept/euler-rate-kinematics",
+   "type": "Concept",
+   "label": {
+    "ko": "각도 변화율 보정표 (1/cos θ)",
+    "en": "Euler-angle rate kinematics"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv2",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "각속도와 오일러각 변화율을 잇는 관계. 1/cos θ 때문에 피치 90°에서 폭주한다."
+   }
+  },
+  {
+   "id": "lab:concept/rotation-group",
+   "type": "Concept",
+   "label": {
+    "ko": "회전들의 공간 SO(3)",
+    "en": "Rotation group SO(3)"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv3",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "3차원 회전을 모두 모은 휘어진 공간."
+   }
+  },
+  {
+   "id": "lab:concept/rotation-geodesic",
+   "type": "Concept",
+   "label": {
+    "ko": "회전 공간의 측지선",
+    "en": "Geodesic on SO(3)"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv3",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "두 자세 사이 가장 짧은 회전. 한 축으로 고르게 돌기."
+   }
+  },
+  {
+   "id": "lab:method/slerp",
+   "type": "Method",
+   "label": {
+    "ko": "구면 선형 보간 (slerp)",
+    "en": "Spherical linear interpolation"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv3",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "회전 공간의 측지선을 따라 두 자세를 잇는 보간."
+   }
+  },
+  {
+   "id": "lab:concept/unit-quaternion",
+   "type": "Concept",
+   "label": {
+    "ko": "단위 쿼터니언",
+    "en": "Unit quaternion"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv4",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "회전축과 반각으로 회전을 적는 숫자 네 개, 길이 1."
+   }
+  },
+  {
+   "id": "lab:concept/double-cover",
+   "type": "Concept",
+   "label": {
+    "ko": "이중 덮개 (q와 −q)",
+    "en": "Double cover"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv4",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "단위 쿼터니언 q와 −q가 같은 자세를 나타내는 성질."
+   }
+  },
+  {
+   "id": "lab:method/geometric-control",
+   "type": "Method",
+   "label": {
+    "ko": "기하학적 제어",
+    "en": "Geometric control on SO(3)"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv5",
+   "level": 4,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "자세 오차를 회전들의 공간에서 직접 재고 고치는 제어."
+   }
+  },
+  {
+   "id": "lab:concept/attitude-error",
+   "type": "Concept",
+   "label": {
+    "ko": "자세 오차 e_R",
+    "en": "Attitude error on SO(3)"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv5",
+   "level": 4,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "회전 공간에서 잰 목표와 지금 자세의 어긋남."
+   }
+  },
+  {
+   "id": "lab:method/euler-pd-control",
+   "type": "Method",
+   "label": {
+    "ko": "세 각도 제어",
+    "en": "Euler-angle PD control"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv5",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "세 각도의 차이로 오차를 재고 고치는 제어. 짐벌락 근처에서 튄다."
+   }
+  },
+  {
+   "id": "lab:concept/pose-estimation-ai",
+   "type": "Concept",
+   "label": {
+    "ko": "자세를 예측하는 AI",
+    "en": "Learning rotations / pose estimation"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#sum",
+   "level": 4,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "mentioned",
+   "family": "neural",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:limitation/euler-singularity",
+   "type": "Limitation",
+   "label": {
+    "ko": "세 각도 표현의 특이점",
+    "en": "Euler-angle singularity"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:limitation/euler-interp-detour",
+   "type": "Limitation",
+   "label": {
+    "ko": "세 각도 보간은 돌아간다",
+    "en": "Euler interpolation detours"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:limitation/quaternion-sign",
+   "type": "Limitation",
+   "label": {
+    "ko": "q와 −q 부호 중복",
+    "en": "Quaternion sign ambiguity"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv4",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:limitation/kinematic-model",
+   "type": "Limitation",
+   "label": {
+    "ko": "단순 운동학 모형",
+    "en": "Kinematic-only model"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv5",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:claim/apollo-cos-division",
+   "type": "Claim",
+   "label": {
+    "ko": "아폴로 관성 장치의 짐벌 각도 계산은 cos으로 나누는 단계가 있어 90°에서 불가능",
+    "en": "Apollo IMU gimbal angle computation divided by cos"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv2",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "alsj-gimbal",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/apollo-70-85",
+   "type": "Claim",
+   "label": {
+    "ko": "달착륙선 컴퓨터는 70°에서 경고, 85°에서 관성 장치 정지",
+    "en": "LM warned at 70 deg and froze IMU at 85 deg"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv2",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "alsj-gimbal",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/collins-fourth-gimbal",
+   "type": "Claim",
+   "label": {
+    "ko": "콜린스: \"크리스마스 선물로 네 번째 짐벌\"",
+    "en": "Collins fourth gimbal quip"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv2",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "alsj-gimbal",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/shoemake-slerp",
+   "type": "Claim",
+   "label": {
+    "ko": "Shoemake(1985)가 쿼터니언 곡선으로 회전 애니메이션(slerp)을 소개",
+    "en": "Shoemake introduced quaternion curves for animation"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv3",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "shoemake1985animating",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/quat-no-singularity",
+   "type": "Claim",
+   "label": {
+    "ko": "단위 쿼터니언은 오일러각 같은 특이점이 없다",
+    "en": "Unit quaternions have no singularity"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv4",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "diebel2006representing",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/antipodal-same",
+   "type": "Claim",
+   "label": {
+    "ko": "반대 부호 단위 쿼터니언은 같은 자세",
+    "en": "Antipodal unit quaternions represent the same attitude"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv4",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "arxiv2206-15077",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/lee-geometric",
+   "type": "Claim",
+   "label": {
+    "ko": "쿼드로터 SE(3) 기하학적 추적 제어",
+    "en": "Geometric tracking control of a quadrotor on SE(3)"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv5",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "lee2010geometric",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/chase-sim",
+   "type": "Claim",
+   "label": {
+    "ko": "(이 페이지 모형) 공중제비 45°/s, 이득 6: 기하 제어 평균 7.6°, 세 각도 24.1°",
+    "en": "Page model: geometric 7.6 deg vs Euler 24.1 deg"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv5",
+   "level": 3,
+   "status": "known",
+   "confidence": "medium",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "lee2010geometric",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:sim/p02-order",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 ① 순서 실험기",
+    "en": "실험 ① 순서 실험기"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/p02-gimbal",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 ② 짐벌락 체험",
+    "en": "실험 ② 짐벌락 체험"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/p02-interp",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 ③ 보간 비교기",
+    "en": "실험 ③ 보간 비교기"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/p02-quat",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 ④ 쿼터니언 다이얼",
+    "en": "실험 ④ 쿼터니언 다이얼"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/p02-chase",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 ⑤ 공중제비 추격",
+    "en": "실험 ⑤ 공중제비 추격"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv5",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/p02-lv1-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "회전 순서 계산",
+    "en": "회전 순서 계산"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/p02-lv1-2",
+   "type": "QuizItem",
+   "label": {
+    "ko": "순서 약속 확인",
+    "en": "순서 약속 확인"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/p02-lv2-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "요 변화율 계산",
+    "en": "요 변화율 계산"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/p02-lv2-2",
+   "type": "QuizItem",
+   "label": {
+    "ko": "짐벌락의 원인",
+    "en": "짐벌락의 원인"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/p02-lv3-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "대각합으로 거리",
+    "en": "대각합으로 거리"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/p02-lv3-2",
+   "type": "QuizItem",
+   "label": {
+    "ko": "보간이 같아지는 경우",
+    "en": "보간이 같아지는 경우"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/p02-lv4-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "90° 쿼터니언",
+    "en": "90° 쿼터니언"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/p02-lv4-2",
+   "type": "QuizItem",
+   "label": {
+    "ko": "360° 쿼터니언",
+    "en": "360° 쿼터니언"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/p02-lv5-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "되돌리는 회전력",
+    "en": "되돌리는 회전력"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv5",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/p02-lv5-2",
+   "type": "QuizItem",
+   "label": {
+    "ko": "세 각도 제어가 튄 까닭",
+    "en": "세 각도 제어가 튄 까닭"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#lv5",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:question/best-rotation-representation",
+   "type": "Question",
+   "label": {
+    "ko": "AI가 회전을 배울 때 가장 좋은 표현은 무엇인가",
+    "en": "Which rotation representation is best for learning"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#sum",
+   "level": 4,
+   "status": "known",
+   "confidence": "medium",
+   "coverage": "mentioned",
+   "family": "neural",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:work/lee2010geometric",
+   "type": "Work",
+   "label": {
+    "ko": "Lee 외 (2010)",
+    "en": "Geometric tracking control of a quadrotor UAV on SE(3)"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/alsj-gimbal",
+   "type": "Work",
+   "label": {
+    "ko": "Apollo Lunar Surface Journal: Gimbal Lock",
+    "en": "Gimbal Angles, Gimbal Lock, and a Fourth Gimbal for Christmas"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/shoemake1985animating",
+   "type": "Work",
+   "label": {
+    "ko": "Shoemake (1985)",
+    "en": "Animating rotation with quaternion curves"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/diebel2006representing",
+   "type": "Work",
+   "label": {
+    "ko": "Diebel (2006)",
+    "en": "Representing Attitude"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/arxiv2206-15077",
+   "type": "Work",
+   "label": {
+    "ko": "arXiv:2206.15077",
+    "en": "Rigid-body attitude control overview"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/arxiv1708-08680",
+   "type": "Work",
+   "label": {
+    "ko": "arXiv:1708.08680",
+    "en": "Quaternions and Attitude Representation"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/fake-change",
+   "type": "Concept",
+   "label": {
+    "ko": "가짜 변화 (눈금이 돈 몫)",
+    "en": "Coordinate-induced change"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#sum",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "mentioned",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/christoffel-symbol",
+   "type": "Concept",
+   "label": {
+    "ko": "크리스토펠 기호",
+    "en": "Christoffel symbols"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#sum",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "mentioned",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/geodesic",
+   "type": "Concept",
+   "label": {
+    "ko": "측지선",
+    "en": "Geodesic"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#sum",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "mentioned",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/covariant-derivative",
+   "type": "Concept",
+   "label": {
+    "ko": "공변미분",
+    "en": "Covariant derivative"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#sum",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "mentioned",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:claim/euler-discontinuity",
+   "type": "Claim",
+   "label": {
+    "ko": "오일러각은 특이점과 불연속이 있고, 단위 쿼터니언은 연속적인 궤적을 줄 수 있다",
+    "en": "Euler angles have singularity and discontinuity; unit quaternions allow continuous trajectories"
+   },
+   "page": "02_drone_gimbal",
+   "anchor": "#sum",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "arxiv1708-08680",
+     "loc": ""
+    }
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:claim/apollo-cos-division",
+   "p": "lab:assertedIn",
+   "o": "lab:work/alsj-gimbal",
+   "anchor": "#export",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/apollo-70-85",
+   "p": "lab:assertedIn",
+   "o": "lab:work/alsj-gimbal",
+   "anchor": "#export",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/collins-fourth-gimbal",
+   "p": "lab:assertedIn",
+   "o": "lab:work/alsj-gimbal",
+   "anchor": "#export",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/shoemake-slerp",
+   "p": "lab:assertedIn",
+   "o": "lab:work/shoemake1985animating",
+   "anchor": "#export",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/quat-no-singularity",
+   "p": "lab:assertedIn",
+   "o": "lab:work/diebel2006representing",
+   "anchor": "#export",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/antipodal-same",
+   "p": "lab:assertedIn",
+   "o": "lab:work/arxiv2206-15077",
+   "anchor": "#export",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/lee-geometric",
+   "p": "lab:assertedIn",
+   "o": "lab:work/lee2010geometric",
+   "anchor": "#export",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/chase-sim",
+   "p": "lab:assertedIn",
+   "o": "lab:work/lee2010geometric",
+   "anchor": "#export",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/p02-lv1-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/rotation-noncommutativity",
+   "anchor": "#lv1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/p02-lv1-2",
+   "p": "lab:assesses",
+   "o": "lab:concept/euler-angles",
+   "anchor": "#lv1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/p02-lv2-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/euler-rate-kinematics",
+   "anchor": "#lv2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/p02-lv2-2",
+   "p": "lab:assesses",
+   "o": "lab:concept/gimbal-lock",
+   "anchor": "#lv2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/p02-lv3-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/rotation-geodesic",
+   "anchor": "#lv3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/p02-lv3-2",
+   "p": "lab:assesses",
+   "o": "lab:concept/rotation-geodesic",
+   "anchor": "#lv3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/p02-lv4-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/unit-quaternion",
+   "anchor": "#lv4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/p02-lv4-2",
+   "p": "lab:assesses",
+   "o": "lab:concept/double-cover",
+   "anchor": "#lv4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/p02-lv5-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/attitude-error",
+   "anchor": "#lv5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/p02-lv5-2",
+   "p": "lab:assesses",
+   "o": "lab:concept/gimbal-lock",
+   "anchor": "#lv5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/attitude",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/euler-angles",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/rotation-noncommutativity",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/gimbal-lock",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/angular-velocity",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/euler-rate-kinematics",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/rotation-group",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/rotation-geodesic",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/unit-quaternion",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/double-cover",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/attitude-error",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/fake-change",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/christoffel-symbol",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/geodesic",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/covariant-derivative",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/slerp",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/geometric-control",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/euler-pd-control",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/pose-estimation-ai",
+   "p": "lab:broader",
+   "o": "lab:topic/transformer",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/euler-angles",
+   "p": "lab:partOf",
+   "o": "lab:concept/attitude",
+   "anchor": "#lv1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/rotation-noncommutativity",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/euler-angles",
+   "anchor": "#lv1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/euler-angles",
+   "p": "lab:hasLimitation",
+   "o": "lab:limitation/euler-singularity",
+   "anchor": "#lv2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/gimbal-lock",
+   "p": "lab:partOf",
+   "o": "lab:limitation/euler-singularity",
+   "anchor": "#lv2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/angular-velocity",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/euler-rate-kinematics",
+   "anchor": "#lv2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/euler-rate-kinematics",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/gimbal-lock",
+   "anchor": "#lv2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:limitation/euler-singularity",
+   "p": "lab:addressedBy",
+   "o": "lab:concept/unit-quaternion",
+   "anchor": "#lv4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/rotation-group",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/rotation-geodesic",
+   "anchor": "#lv3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/slerp",
+   "p": "lab:partOf",
+   "o": "lab:concept/rotation-geodesic",
+   "anchor": "#lv3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/euler-angles",
+   "p": "lab:hasLimitation",
+   "o": "lab:limitation/euler-interp-detour",
+   "anchor": "#lv3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:limitation/euler-interp-detour",
+   "p": "lab:addressedBy",
+   "o": "lab:method/slerp",
+   "anchor": "#lv3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/unit-quaternion",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:method/slerp",
+   "anchor": "#lv4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/double-cover",
+   "p": "lab:partOf",
+   "o": "lab:concept/unit-quaternion",
+   "anchor": "#lv4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/unit-quaternion",
+   "p": "lab:hasLimitation",
+   "o": "lab:limitation/quaternion-sign",
+   "anchor": "#lv4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:limitation/quaternion-sign",
+   "p": "lab:addressedBy",
+   "o": "lab:method/slerp",
+   "anchor": "#lv4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/attitude-error",
+   "p": "lab:partOf",
+   "o": "lab:method/geometric-control",
+   "anchor": "#lv5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/geometric-control",
+   "p": "lab:contrastsWith",
+   "o": "lab:method/euler-pd-control",
+   "anchor": "#lv5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/euler-pd-control",
+   "p": "lab:hasLimitation",
+   "o": "lab:limitation/euler-singularity",
+   "anchor": "#lv5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/geometric-control",
+   "p": "lab:hasLimitation",
+   "o": "lab:limitation/kinematic-model",
+   "anchor": "#lv5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/rotation-group",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:method/geometric-control",
+   "anchor": "#lv5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/gimbal-lock",
+   "p": "lab:analogyOf",
+   "o": "lab:concept/fake-change",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/euler-rate-kinematics",
+   "p": "lab:analogyOf",
+   "o": "lab:concept/christoffel-symbol",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/rotation-geodesic",
+   "p": "lab:analogyOf",
+   "o": "lab:concept/geodesic",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/attitude-error",
+   "p": "lab:analogyOf",
+   "o": "lab:concept/covariant-derivative",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/pose-estimation-ai",
+   "p": "lab:raises",
+   "o": "lab:question/best-rotation-representation",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/apollo-cos-division",
+   "p": "lab:supports",
+   "o": "lab:concept/euler-rate-kinematics",
+   "anchor": "#lv2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/apollo-70-85",
+   "p": "lab:supports",
+   "o": "lab:concept/gimbal-lock",
+   "anchor": "#lv2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/collins-fourth-gimbal",
+   "p": "lab:supports",
+   "o": "lab:concept/gimbal-lock",
+   "anchor": "#lv2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/shoemake-slerp",
+   "p": "lab:supports",
+   "o": "lab:method/slerp",
+   "anchor": "#lv3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/quat-no-singularity",
+   "p": "lab:supports",
+   "o": "lab:concept/unit-quaternion",
+   "anchor": "#lv4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/antipodal-same",
+   "p": "lab:supports",
+   "o": "lab:concept/double-cover",
+   "anchor": "#lv4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/lee-geometric",
+   "p": "lab:supports",
+   "o": "lab:method/geometric-control",
+   "anchor": "#lv5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/chase-sim",
+   "p": "lab:supports",
+   "o": "lab:method/geometric-control",
+   "anchor": "#lv5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/rotation-noncommutativity",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/p02-order",
+   "anchor": "#lv1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/gimbal-lock",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/p02-gimbal",
+   "anchor": "#lv2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/rotation-geodesic",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/p02-interp",
+   "anchor": "#lv3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/double-cover",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/p02-quat",
+   "anchor": "#lv4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/geometric-control",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/p02-chase",
+   "anchor": "#lv5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/euler-discontinuity",
+   "p": "lab:assertedIn",
+   "o": "lab:work/arxiv1708-08680",
+   "anchor": "#export",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/euler-discontinuity",
+   "p": "lab:supports",
+   "o": "lab:concept/pose-estimation-ai",
+   "anchor": "#sum",
+   "confidence": "high"
+  }
+ ]
+}
