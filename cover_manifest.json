@@ -9,12 +9,20 @@
     "path": "index.html",
     "kg": true,
     "export": true
+   },
+   {
+    "path": "practice/typhoon.html",
+    "kg": true,
+    "export": true
    }
   ],
   "files": [
    "data/kg.json",
    "data/refs.json",
-   "data/meta.json"
+   "data/meta.json",
+   "data/typhoon/kg.json",
+   "data/typhoon/refs.json",
+   "data/typhoon/meta.json"
   ]
  },
  "i18n": {
@@ -54,7 +62,7 @@
    "robot": "jupanbot-v2",
    "prompt_en": "Website top cover, 16:9, 16-bit RPG pixel art, comedic: furious jupanbot held back by doc, asst, sia, moa; fruit fly dodging in the air; X1-X3 cheering behind ... see docs/COVER_01_covariant_chase.md",
    "source_of": null,
-   "status": "todo"
+   "status": "ok"
   },
   {
    "id": "og_01",
@@ -75,7 +83,7 @@
    "robot": "jupanbot-v2",
    "prompt_en": null,
    "source_of": "cover_01",
-   "status": "todo"
+   "status": "ok"
   },
   {
    "id": "sc_01",
@@ -95,7 +103,8 @@
    "robot": "jupanbot-v2",
    "prompt_en": "16-bit RPG style pixel art, 3:2 scene ... see GENSPARK_요청서.md",
    "source_of": null,
-   "status": "todo"
+   "status": "ok",
+   "path": "assets/img/sc_01.webp"
   },
   {
    "id": "sc_02",
@@ -114,7 +123,8 @@
    "robot": "jupanbot-v2",
    "prompt_en": "16-bit RPG style pixel art, 3:2 scene ... see GENSPARK_요청서.md",
    "source_of": null,
-   "status": "todo"
+   "status": "ok",
+   "path": "assets/img/sc_02.webp"
   },
   {
    "id": "sc_03",
@@ -133,7 +143,8 @@
    "robot": "jupanbot-v2",
    "prompt_en": "16-bit RPG style pixel art, 3:2 scene ... see GENSPARK_요청서.md",
    "source_of": null,
-   "status": "todo"
+   "status": "ok",
+   "path": "assets/img/sc_03.webp"
   },
   {
    "id": "sc_04",
@@ -152,7 +163,8 @@
    "robot": "jupanbot-v2",
    "prompt_en": "16-bit RPG style pixel art, 3:2 scene ... see GENSPARK_요청서.md",
    "source_of": null,
-   "status": "todo"
+   "status": "ok",
+   "path": "assets/img/sc_04.webp"
   },
   {
    "id": "sc_05",
@@ -172,7 +184,8 @@
    "robot": "jupanbot-v2",
    "prompt_en": "16-bit RPG style pixel art, 3:2 scene ... see GENSPARK_요청서.md",
    "source_of": null,
-   "status": "todo"
+   "status": "ok",
+   "path": "assets/img/sc_05.webp"
   },
   {
    "id": "sc_06",
@@ -197,7 +210,8 @@
    "robot": "jupanbot-v2",
    "prompt_en": "16-bit RPG style pixel art, 3:2 scene ... see GENSPARK_요청서.md",
    "source_of": null,
-   "status": "todo"
+   "status": "redraw",
+   "path": "assets/img/sc_06.webp"
   },
   {
    "id": "sc_07",
@@ -214,6 +228,107 @@
    ],
    "robot": "jupanbot-v2",
    "prompt_en": "16-bit RPG style pixel art, 3:2 scene ... see GENSPARK_요청서.md",
+   "source_of": null,
+   "status": "ok",
+   "path": "assets/img/sc_07.webp"
+  },
+  {
+   "id": "thumb_01",
+   "role": "thumb",
+   "path": "assets/img/thumb_01.webp",
+   "size": [
+    600,
+    400
+   ],
+   "characters": [
+    "jupanbot",
+    "fly",
+    "doc",
+    "asst",
+    "sia",
+    "moa"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": null,
+   "source_of": "cover_01",
+   "status": "ok"
+  },
+  {
+   "id": "ty_01",
+   "role": "scene",
+   "embedded_in": "practice/typhoon.html",
+   "key": "figure[data-img=ty_01]",
+   "size": [
+    1200,
+    800
+   ],
+   "characters": [
+    "fly",
+    "jupanbot",
+    "asst"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "16-bit RPG style pixel art ... see docs/GENSPARK_요청서_2.md",
+   "source_of": null,
+   "status": "todo"
+  },
+  {
+   "id": "ty_02",
+   "role": "scene",
+   "embedded_in": "practice/typhoon.html",
+   "key": "figure[data-img=ty_02]",
+   "size": [
+    1200,
+    800
+   ],
+   "characters": [
+    "asst",
+    "sia",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "16-bit RPG style pixel art ... see docs/GENSPARK_요청서_2.md",
+   "source_of": null,
+   "status": "todo"
+  },
+  {
+   "id": "ty_03",
+   "role": "scene",
+   "embedded_in": "practice/typhoon.html",
+   "key": "figure[data-img=ty_03]",
+   "size": [
+    1200,
+    800
+   ],
+   "characters": [
+    "x1",
+    "x2",
+    "x3",
+    "jupanbot",
+    "moa"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "16-bit RPG style pixel art ... see docs/GENSPARK_요청서_2.md",
+   "source_of": null,
+   "status": "todo"
+  },
+  {
+   "id": "pr_01",
+   "role": "scene",
+   "embedded_in": "practice/index.html",
+   "key": "figure[data-img=pr_01]",
+   "size": [
+    1600,
+    700
+   ],
+   "characters": [
+    "jupanbot",
+    "asst",
+    "doc",
+    "fly"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "16-bit RPG style pixel art ... see docs/GENSPARK_요청서_2.md",
    "source_of": null,
    "status": "todo"
   }

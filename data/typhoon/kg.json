@@ -1,0 +1,1733 @@
+{
+ "version": "1.0",
+ "page": "A1_typhoon",
+ "nodes": [
+  {
+   "id": "lab:concept/weather-forecasting",
+   "type": "Concept",
+   "label": {
+    "ko": "기상 예측",
+    "en": "Weather forecasting"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#why",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "probability",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "대기의 지금 상태에서 앞으로의 날씨를 계산해 내는 일."
+   }
+  },
+  {
+   "id": "lab:concept/tropical-cyclone-track-forecast",
+   "type": "Concept",
+   "label": {
+    "ko": "태풍 진로 예보",
+    "en": "Tropical cyclone track forecasting"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#why",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "태풍 중심이 앞으로 어디로 갈지 예보하는 일."
+   }
+  },
+  {
+   "id": "lab:concept/steering-flow",
+   "type": "Concept",
+   "label": {
+    "ko": "지향류",
+    "en": "Steering flow"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#why",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "태풍을 실어 나르는 주변의 큰 바람."
+   }
+  },
+  {
+   "id": "lab:concept/recurvature",
+   "type": "Concept",
+   "label": {
+    "ko": "전향",
+    "en": "Recurvature"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#why",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "서쪽으로 가던 태풍이 편서풍을 만나 북동쪽으로 꺾이는 것."
+   }
+  },
+  {
+   "id": "lab:concept/beta-drift",
+   "type": "Concept",
+   "label": {
+    "ko": "베타 표류",
+    "en": "Beta drift"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#why",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "코리올리 효과의 세기가 위도마다 달라 태풍이 스스로 극·서쪽으로 흐르는 현상. 보통 초속 1~2 m."
+   }
+  },
+  {
+   "id": "lab:concept/coriolis-effect",
+   "type": "Concept",
+   "label": {
+    "ko": "코리올리 효과",
+    "en": "Coriolis effect"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#why",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "돌고 있는 지구 위에서 보면 움직이는 공기가 옆으로 휘어 보이는 겉보기 효과."
+   }
+  },
+  {
+   "id": "lab:concept/sensitive-dependence",
+   "type": "Concept",
+   "label": {
+    "ko": "처음 값에 민감한 성질 (나비 효과)",
+    "en": "Sensitive dependence on initial conditions"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#why",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "처음의 작은 차이가 시간이 지나며 크게 벌어지는 성질."
+   }
+  },
+  {
+   "id": "lab:concept/ensemble-forecast",
+   "type": "Concept",
+   "label": {
+    "ko": "앙상블 예보",
+    "en": "Ensemble forecast"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#earth",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "probability",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "처음 값과 조건을 조금씩 바꾼 여러 예보를 함께 돌려 퍼짐까지 보는 예보."
+   }
+  },
+  {
+   "id": "lab:concept/probability-circle",
+   "type": "Concept",
+   "label": {
+    "ko": "확률 원",
+    "en": "Probability circle"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#ai",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "probability",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "태풍이 정해진 확률(일본기상청은 70%)로 들어갈 원."
+   }
+  },
+  {
+   "id": "lab:concept/forecast-error-growth",
+   "type": "Concept",
+   "label": {
+    "ko": "예보 오차 증가",
+    "en": "Forecast error growth"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#why",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "probability",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "예보 시간이 길수록 평균 오차가 커지는 것."
+   }
+  },
+  {
+   "id": "lab:concept/zonal-jets",
+   "type": "Concept",
+   "label": {
+    "ko": "행성 띠 바람 (제트 기류)",
+    "en": "Zonal jets"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#hell",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "행성의 위도를 따라 띠 모양으로 부는 강한 동서 바람."
+   }
+  },
+  {
+   "id": "lab:concept/numerical-weather-prediction",
+   "type": "Method",
+   "label": {
+    "ko": "수치예보",
+    "en": "Numerical weather prediction"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#wai",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "물리 방정식을 컴퓨터 알고리즘으로 바꿔 슈퍼컴퓨터로 푸는 예보."
+   }
+  },
+  {
+   "id": "lab:method/ai-weather-prediction",
+   "type": "Method",
+   "label": {
+    "ko": "기상 인공지능",
+    "en": "Machine-learning weather prediction"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#wai",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "time-series",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "재분석 자료로 학습해 날씨를 예보하는 AI 모델."
+   }
+  },
+  {
+   "id": "lab:method/graphcast",
+   "type": "Method",
+   "label": {
+    "ko": "GraphCast",
+    "en": "GraphCast"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#wai",
+   "level": 4,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "gnn",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:method/pangu-weather",
+   "type": "Method",
+   "label": {
+    "ko": "Pangu-Weather",
+    "en": "Pangu-Weather"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#wai",
+   "level": 4,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "transformer",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:method/gencast",
+   "type": "Method",
+   "label": {
+    "ko": "GenCast",
+    "en": "GenCast"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#wai",
+   "level": 4,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "diffusion",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:method/aifs",
+   "type": "Method",
+   "label": {
+    "ko": "AIFS (ECMWF)",
+    "en": "Artificial Intelligence Forecasting System"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#wai",
+   "level": 4,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "mentioned",
+   "family": "time-series",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:dataset/era5",
+   "type": "Dataset",
+   "label": {
+    "ko": "ERA5 재분석 자료",
+    "en": "ERA5 reanalysis"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#wai",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "mentioned",
+   "family": "time-series",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/spherical-data",
+   "type": "Concept",
+   "label": {
+    "ko": "구면 위의 데이터",
+    "en": "Data on the sphere"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#wai",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "날씨 자료는 둥근 지구 위에 있어, 펼친 격자로 다루면 극 쪽이 왜곡된다."
+   }
+  },
+  {
+   "id": "lab:limitation/initial-condition-error",
+   "type": "Limitation",
+   "label": {
+    "ko": "처음 값 오차",
+    "en": "Initial condition error"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#why",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:limitation/sparse-ocean-observation",
+   "type": "Limitation",
+   "label": {
+    "ko": "바다 위 관측 부족",
+    "en": "Sparse observations over ocean"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#why",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:limitation/ai-needs-analysis",
+   "type": "Limitation",
+   "label": {
+    "ko": "AI도 초기값과 학습 자료에 기댄다",
+    "en": "AI models depend on analysis and reanalysis"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#wai",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:limitation/point-forecast",
+   "type": "Limitation",
+   "label": {
+    "ko": "점 하나 예보의 한계",
+    "en": "Single-point forecasts hide uncertainty"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#ai",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:claim/jma-error-2025",
+   "type": "Claim",
+   "label": {
+    "ko": "일본기상청 2025 평균 진로 오차: 24h 66 km ~ 120h 512 km",
+    "en": "JMA 2025 mean track errors"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#why",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "jma2026track",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/beta-drift-speed",
+   "type": "Claim",
+   "label": {
+    "ko": "베타 표류는 보통 초속 1~2 m, 극·서쪽 방향",
+    "en": "Beta drift is about 1–2 m/s poleward and westward"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#why",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "ams-beta",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/kanun-error",
+   "type": "Claim",
+   "label": {
+    "ko": "2023 태풍 카눈: 72h 약 400 km, 120h 약 700 km 모델 오차",
+    "en": "Kanun 2023 track errors"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#why",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "ems2024kanun",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/jma-probability-circle",
+   "type": "Claim",
+   "label": {
+    "ko": "일본기상청은 70% 확률 원을 함께 낸다",
+    "en": "JMA issues 70% probability circles"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#ai",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "mannoji-probcircle",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/jupiter-jet-182",
+   "type": "Claim",
+   "label": {
+    "ko": "목성 최고 제트 182 ± 10 m/s, 북위 23.7°",
+    "en": "Jupiter jet 182 m/s at 23.7N"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#hell",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "ntrs-jovian-jet",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/saturn-equatorial-jet",
+   "type": "Claim",
+   "label": {
+    "ko": "토성 적도 구름 바람 약 500 m/s",
+    "en": "Saturn equatorial jet ~500 m/s"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#hell",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "choi2013saturn",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/saturn-rotation-reference",
+   "type": "Claim",
+   "label": {
+    "ko": "토성 바람 값은 기준 자전 주기에 따라 달라진다",
+    "en": "Saturn wind speeds depend on rotation reference"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#hell",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "planetary-saturn-winds",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/neptune-winds",
+   "type": "Claim",
+   "label": {
+    "ko": "해왕성 바람 최대 시속 약 2,100 km",
+    "en": "Neptune winds up to 2,100 km/h"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#hell",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "cnes-neptune",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/graphcast-cyclone",
+   "type": "Claim",
+   "label": {
+    "ko": "GraphCast는 10일 예보를 1분 안에 내고 태풍 진로를 HRES보다 정확히 추적",
+    "en": "GraphCast tracks cyclones better than HRES"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#wai",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "lam2023graphcast",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/pangu-speed",
+   "type": "Claim",
+   "label": {
+    "ko": "Pangu-Weather는 IFS보다 1만 배 넘게 빠르다",
+    "en": "Pangu-Weather is >10,000x faster than IFS"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#wai",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "bi2023pangu",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/gencast-972",
+   "type": "Claim",
+   "label": {
+    "ko": "GenCast는 1,320개 항목 중 97.2%에서 ENS보다 우세, 태풍 진로도 더 정확",
+    "en": "GenCast beats ENS on 97.2% of targets"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#wai",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "price2025gencast",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/aifs-operational",
+   "type": "Claim",
+   "label": {
+    "ko": "ECMWF AIFS 단일판 2025-02-25, 앙상블판 2025-07-01 운영",
+    "en": "AIFS operational in 2025"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#wai",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "ecmwf2025aifs",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:sim/a1-earth",
+   "type": "Simulation",
+   "label": {
+    "ko": "게임 1 태풍 예보 센터 (지구)",
+    "en": "Typhoon forecast center game"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#earth",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/a1-hell",
+   "type": "Simulation",
+   "label": {
+    "ko": "게임 2 헬게이트 행성 태풍 예보",
+    "en": "Planetary storm forecasting (hell gate)"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#hell",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/a1-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "72시간 평균 오차",
+    "en": "72시간 평균 오차"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#quiz",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/a1-2",
+   "type": "QuizItem",
+   "label": {
+    "ko": "베타 표류의 까닭",
+    "en": "베타 표류의 까닭"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#quiz",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/a1-3",
+   "type": "QuizItem",
+   "label": {
+    "ko": "점 예보에서 물을 것",
+    "en": "점 예보에서 물을 것"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#quiz",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:question/ai-unseen-storms",
+   "type": "Question",
+   "label": {
+    "ko": "학습한 적 없는 낯선 태풍에도 기상 인공지능이 잘 맞힐까",
+    "en": "Do ML weather models generalize to unprecedented storms"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#wai",
+   "level": 4,
+   "status": "known",
+   "confidence": "medium",
+   "coverage": "mentioned",
+   "family": "time-series",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:work/jma2026track",
+   "type": "Work",
+   "label": {
+    "ko": "일본기상청 태풍 진로 예보 연평균 오차 표",
+    "en": "JMA track forecast error table"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/ams-beta",
+   "type": "Work",
+   "label": {
+    "ko": "AMS Glossary: Beta drift",
+    "en": "Beta drift"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/ems2024kanun",
+   "type": "Work",
+   "label": {
+    "ko": "EMS2024-390 태풍 카눈",
+    "en": "EMS2024-390"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/mannoji-probcircle",
+   "type": "Work",
+   "label": {
+    "ko": "Mannoji, Probability Circle (JMA)",
+    "en": "Reduction of the Radius of Probability Circle"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/ntrs-jovian-jet",
+   "type": "Work",
+   "label": {
+    "ko": "NTRS: high-speed Jovian jet",
+    "en": "The dynamics of a high-speed Jovian jet"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/choi2013saturn",
+   "type": "Work",
+   "label": {
+    "ko": "Choi 외, Saturn VIMS",
+    "en": "Cloud Features and Zonal Wind Measurements of Saturn"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/planetary-saturn-winds",
+   "type": "Work",
+   "label": {
+    "ko": "Planetary Society: Wind speeds on Saturn",
+    "en": "Wind speeds on Saturn"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/cnes-neptune",
+   "type": "Work",
+   "label": {
+    "ko": "CNES: Neptune",
+    "en": "Neptune"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/lam2023graphcast",
+   "type": "Work",
+   "label": {
+    "ko": "Lam 외 (2023) GraphCast",
+    "en": "Learning skillful medium-range global weather forecasting"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/bi2023pangu",
+   "type": "Work",
+   "label": {
+    "ko": "Bi 외 (2023) Pangu-Weather",
+    "en": "Accurate medium-range global weather forecasting with 3D neural networks"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/price2025gencast",
+   "type": "Work",
+   "label": {
+    "ko": "Price 외 (2025) GenCast",
+    "en": "Probabilistic weather forecasting with machine learning"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/ecmwf2025aifs",
+   "type": "Work",
+   "label": {
+    "ko": "ECMWF: AIFS ensemble operational",
+    "en": "ECMWF ensemble AI forecasts become operational"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/lorenz1963",
+   "type": "Work",
+   "label": {
+    "ko": "Lorenz (1963)",
+    "en": "Deterministic nonperiodic flow"
+   },
+   "page": "A1_typhoon",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/fake-change",
+   "type": "Concept",
+   "label": {
+    "ko": "가짜 변화 (눈금이 돈 몫)",
+    "en": "Coordinate-induced change"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#why",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "mentioned",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math"
+   ]
+  },
+  {
+   "id": "lab:concept/geodesic",
+   "type": "Concept",
+   "label": {
+    "ko": "측지선",
+    "en": "Geodesic"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#why",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "mentioned",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math"
+   ]
+  },
+  {
+   "id": "lab:concept/parallel-transport",
+   "type": "Concept",
+   "label": {
+    "ko": "평행이동",
+    "en": "Parallel transport"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#why",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "mentioned",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:claim/jma-error-2025",
+   "p": "lab:assertedIn",
+   "o": "lab:work/jma2026track",
+   "anchor": "#export",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/beta-drift-speed",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ams-beta",
+   "anchor": "#export",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/kanun-error",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ems2024kanun",
+   "anchor": "#export",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/jma-probability-circle",
+   "p": "lab:assertedIn",
+   "o": "lab:work/mannoji-probcircle",
+   "anchor": "#export",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/jupiter-jet-182",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ntrs-jovian-jet",
+   "anchor": "#export",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/saturn-equatorial-jet",
+   "p": "lab:assertedIn",
+   "o": "lab:work/choi2013saturn",
+   "anchor": "#export",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/saturn-rotation-reference",
+   "p": "lab:assertedIn",
+   "o": "lab:work/planetary-saturn-winds",
+   "anchor": "#export",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/neptune-winds",
+   "p": "lab:assertedIn",
+   "o": "lab:work/cnes-neptune",
+   "anchor": "#export",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/graphcast-cyclone",
+   "p": "lab:assertedIn",
+   "o": "lab:work/lam2023graphcast",
+   "anchor": "#export",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/pangu-speed",
+   "p": "lab:assertedIn",
+   "o": "lab:work/bi2023pangu",
+   "anchor": "#export",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/gencast-972",
+   "p": "lab:assertedIn",
+   "o": "lab:work/price2025gencast",
+   "anchor": "#export",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/aifs-operational",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ecmwf2025aifs",
+   "anchor": "#export",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/a1-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/forecast-error-growth",
+   "anchor": "#quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/a1-2",
+   "p": "lab:assesses",
+   "o": "lab:concept/beta-drift",
+   "anchor": "#quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/a1-3",
+   "p": "lab:assesses",
+   "o": "lab:concept/probability-circle",
+   "anchor": "#quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/beta-drift",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/coriolis-effect",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sensitive-dependence",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/zonal-jets",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/spherical-data",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/weather-forecasting",
+   "p": "lab:broader",
+   "o": "lab:topic/time-series",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/tropical-cyclone-track-forecast",
+   "p": "lab:broader",
+   "o": "lab:topic/probability-statistics",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/ensemble-forecast",
+   "p": "lab:broader",
+   "o": "lab:topic/probability-statistics",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/probability-circle",
+   "p": "lab:broader",
+   "o": "lab:topic/probability-statistics",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/forecast-error-growth",
+   "p": "lab:broader",
+   "o": "lab:topic/probability-statistics",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/steering-flow",
+   "p": "lab:broader",
+   "o": "lab:topic/probability-statistics",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/recurvature",
+   "p": "lab:broader",
+   "o": "lab:topic/probability-statistics",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/numerical-weather-prediction",
+   "p": "lab:broader",
+   "o": "lab:topic/time-series",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/ai-weather-prediction",
+   "p": "lab:broader",
+   "o": "lab:topic/time-series",
+   "anchor": "#wai",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/graphcast",
+   "p": "lab:broader",
+   "o": "lab:topic/gnn",
+   "anchor": "#wai",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/gencast",
+   "p": "lab:broader",
+   "o": "lab:topic/diffusion",
+   "anchor": "#wai",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/pangu-weather",
+   "p": "lab:broader",
+   "o": "lab:topic/transformer",
+   "anchor": "#wai",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/aifs",
+   "p": "lab:broader",
+   "o": "lab:topic/time-series",
+   "anchor": "#wai",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/graphcast",
+   "p": "lab:partOf",
+   "o": "lab:method/ai-weather-prediction",
+   "anchor": "#wai",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/gencast",
+   "p": "lab:partOf",
+   "o": "lab:method/ai-weather-prediction",
+   "anchor": "#wai",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/pangu-weather",
+   "p": "lab:partOf",
+   "o": "lab:method/ai-weather-prediction",
+   "anchor": "#wai",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/aifs",
+   "p": "lab:partOf",
+   "o": "lab:method/ai-weather-prediction",
+   "anchor": "#wai",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/tropical-cyclone-track-forecast",
+   "p": "lab:partOf",
+   "o": "lab:concept/weather-forecasting",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/steering-flow",
+   "p": "lab:partOf",
+   "o": "lab:concept/tropical-cyclone-track-forecast",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/recurvature",
+   "p": "lab:partOf",
+   "o": "lab:concept/steering-flow",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/beta-drift",
+   "p": "lab:partOf",
+   "o": "lab:concept/tropical-cyclone-track-forecast",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/coriolis-effect",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/beta-drift",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sensitive-dependence",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/ensemble-forecast",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/ensemble-forecast",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/probability-circle",
+   "anchor": "#ai",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/forecast-error-growth",
+   "p": "lab:partOf",
+   "o": "lab:concept/tropical-cyclone-track-forecast",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/ai-weather-prediction",
+   "p": "lab:contrastsWith",
+   "o": "lab:concept/numerical-weather-prediction",
+   "anchor": "#wai",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/ai-weather-prediction",
+   "p": "lab:evaluatedOn",
+   "o": "lab:dataset/era5",
+   "anchor": "#wai",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/spherical-data",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:method/ai-weather-prediction",
+   "anchor": "#wai",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/tropical-cyclone-track-forecast",
+   "p": "lab:hasLimitation",
+   "o": "lab:limitation/initial-condition-error",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:limitation/initial-condition-error",
+   "p": "lab:addressedBy",
+   "o": "lab:concept/ensemble-forecast",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/tropical-cyclone-track-forecast",
+   "p": "lab:hasLimitation",
+   "o": "lab:limitation/sparse-ocean-observation",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/ai-weather-prediction",
+   "p": "lab:hasLimitation",
+   "o": "lab:limitation/ai-needs-analysis",
+   "anchor": "#wai",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:limitation/ai-needs-analysis",
+   "p": "lab:addressedBy",
+   "o": "lab:concept/ensemble-forecast",
+   "anchor": "#wai",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/probability-circle",
+   "p": "lab:partOf",
+   "o": "lab:limitation/point-forecast",
+   "anchor": "#ai",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/ai-weather-prediction",
+   "p": "lab:raises",
+   "o": "lab:question/ai-unseen-storms",
+   "anchor": "#wai",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/jma-error-2025",
+   "p": "lab:supports",
+   "o": "lab:concept/forecast-error-growth",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/beta-drift-speed",
+   "p": "lab:supports",
+   "o": "lab:concept/beta-drift",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/kanun-error",
+   "p": "lab:supports",
+   "o": "lab:concept/recurvature",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/jma-probability-circle",
+   "p": "lab:supports",
+   "o": "lab:concept/probability-circle",
+   "anchor": "#ai",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/jupiter-jet-182",
+   "p": "lab:supports",
+   "o": "lab:concept/zonal-jets",
+   "anchor": "#hell",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/saturn-equatorial-jet",
+   "p": "lab:supports",
+   "o": "lab:concept/zonal-jets",
+   "anchor": "#hell",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/saturn-rotation-reference",
+   "p": "lab:supports",
+   "o": "lab:concept/zonal-jets",
+   "anchor": "#hell",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/neptune-winds",
+   "p": "lab:supports",
+   "o": "lab:concept/zonal-jets",
+   "anchor": "#hell",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/graphcast-cyclone",
+   "p": "lab:supports",
+   "o": "lab:method/graphcast",
+   "anchor": "#wai",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/pangu-speed",
+   "p": "lab:supports",
+   "o": "lab:method/pangu-weather",
+   "anchor": "#wai",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/gencast-972",
+   "p": "lab:supports",
+   "o": "lab:method/gencast",
+   "anchor": "#wai",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/aifs-operational",
+   "p": "lab:supports",
+   "o": "lab:method/aifs",
+   "anchor": "#wai",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sensitive-dependence",
+   "p": "lab:assertedIn",
+   "o": "lab:work/lorenz1963",
+   "anchor": "#export",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/tropical-cyclone-track-forecast",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/a1-earth",
+   "anchor": "#earth",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/zonal-jets",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/a1-hell",
+   "anchor": "#hell",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/ensemble-forecast",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/a1-earth",
+   "anchor": "#earth",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/coriolis-effect",
+   "p": "lab:analogyOf",
+   "o": "lab:concept/fake-change",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/geodesic",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/tropical-cyclone-track-forecast",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/beta-drift",
+   "p": "lab:relatedTo",
+   "o": "lab:concept/parallel-transport",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/fake-change",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/geodesic",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#why",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/parallel-transport",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#why",
+   "confidence": "high"
+  }
+ ]
+}

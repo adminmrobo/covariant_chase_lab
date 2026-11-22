@@ -1,0 +1,517 @@
+[
+ {
+  "id": "jma2026track",
+  "type": "webpage",
+  "title": "台風進路予報の年平均誤差の一覧表",
+  "author": [
+   {
+    "literal": "일본기상청(JMA)"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2026
+    ]
+   ]
+  },
+  "lab": {
+   "work": "lab:work/jma2026track",
+   "role": "primary",
+   "supports": [
+    "lab:claim/jma-error-2025"
+   ],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": false,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "웹 검색으로 원문 페이지와 대조 (2026-11-23)",
+   "checkedSource": "web"
+  },
+  "URL": "https://www.data.jma.go.jp/typhoon/verification/table_track.html"
+ },
+ {
+  "id": "ams-beta",
+  "type": "entry-dictionary",
+  "title": "Beta drift",
+  "author": [
+   {
+    "literal": "American Meteorological Society"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2026
+    ]
+   ]
+  },
+  "lab": {
+   "work": "lab:work/ams-beta",
+   "role": "background",
+   "supports": [
+    "lab:claim/beta-drift-speed"
+   ],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": true,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "웹 검색으로 원문 페이지와 대조 (2026-11-23)",
+   "checkedSource": "web"
+  },
+  "container-title": "Glossary of Meteorology",
+  "URL": "https://glossary.ametsoc.org/wiki/Beta_drift"
+ },
+ {
+  "id": "ems2024kanun",
+  "type": "paper-conference",
+  "title": "EMS2024-390 (Typhoon Kanun track error)",
+  "author": [
+   {
+    "literal": "EMS Annual Meeting 2024"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2024
+    ]
+   ]
+  },
+  "lab": {
+   "work": "lab:work/ems2024kanun",
+   "role": "background",
+   "supports": [
+    "lab:claim/kanun-error"
+   ],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": true,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "웹 검색으로 원문 페이지와 대조 (2026-11-23)",
+   "checkedSource": "web"
+  },
+  "container-title": "EMS Annual Meeting Abstracts",
+  "URL": "https://meetingorganizer.copernicus.org/EMS2024/EMS2024-390.html"
+ },
+ {
+  "id": "mannoji-probcircle",
+  "type": "report",
+  "title": "Reduction of the Radius of Probability Circle in Typhoon Track Forecast",
+  "author": [
+   {
+    "family": "Mannoji",
+    "given": "Nobutaka"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2004
+    ]
+   ]
+  },
+  "lab": {
+   "work": "lab:work/mannoji-probcircle",
+   "role": "background",
+   "supports": [
+    "lab:claim/jma-probability-circle"
+   ],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": true,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "웹 검색으로 원문 페이지와 대조 (2026-11-23)",
+   "checkedSource": "web"
+  },
+  "container-title": "RSMC Tokyo-Typhoon Center Technical Review",
+  "URL": "https://www.jma.go.jp/jma/jma-eng/jma-center/rsmc-hp-pub-eg/techrev/text8-1.pdf"
+ },
+ {
+  "id": "ntrs-jovian-jet",
+  "type": "article-journal",
+  "title": "The dynamics of a high-speed Jovian jet",
+  "author": [
+   {
+    "literal": "NASA NTRS 19840062482"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1984
+    ]
+   ]
+  },
+  "lab": {
+   "work": "lab:work/ntrs-jovian-jet",
+   "role": "background",
+   "supports": [
+    "lab:claim/jupiter-jet-182"
+   ],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": false,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "웹 검색으로 원문 페이지와 대조 (2026-11-23)",
+   "checkedSource": "web"
+  },
+  "URL": "https://ntrs.nasa.gov/citations/19840062482"
+ },
+ {
+  "id": "choi2013saturn",
+  "type": "article",
+  "title": "Cloud Features and Zonal Wind Measurements of Saturn's Atmosphere as Observed by Cassini/VIMS",
+  "author": [
+   {
+    "family": "Choi",
+    "given": "David S."
+   },
+   {
+    "family": "Showman",
+    "given": "Adam P."
+   },
+   {
+    "family": "Brown",
+    "given": "Robert H."
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2013
+    ]
+   ]
+  },
+  "lab": {
+   "work": "lab:work/choi2013saturn",
+   "role": "background",
+   "supports": [
+    "lab:claim/saturn-equatorial-jet"
+   ],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": false,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "웹 검색으로 원문 페이지와 대조 (2026-11-23)",
+   "checkedSource": "web"
+  },
+  "URL": "https://arxiv.org/abs/1301.6124"
+ },
+ {
+  "id": "planetary-saturn-winds",
+  "type": "webpage",
+  "title": "Wind speeds on Saturn",
+  "author": [
+   {
+    "literal": "The Planetary Society"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2026
+    ]
+   ]
+  },
+  "lab": {
+   "work": "lab:work/planetary-saturn-winds",
+   "role": "background",
+   "supports": [
+    "lab:claim/saturn-rotation-reference"
+   ],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": false,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "웹 검색으로 원문 페이지와 대조 (2026-11-23)",
+   "checkedSource": "web"
+  },
+  "URL": "https://planetary.org/space-images/wind-speeds-on-saturn"
+ },
+ {
+  "id": "cnes-neptune",
+  "type": "webpage",
+  "title": "Neptune",
+  "author": [
+   {
+    "literal": "CNES"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2025
+    ]
+   ]
+  },
+  "lab": {
+   "work": "lab:work/cnes-neptune",
+   "role": "background",
+   "supports": [
+    "lab:claim/neptune-winds"
+   ],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": false,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "웹 검색으로 원문 페이지와 대조 (2026-11-23)",
+   "checkedSource": "web"
+  },
+  "URL": "https://cnes.fr/en/folders/planet-neptune"
+ },
+ {
+  "id": "lam2023graphcast",
+  "type": "article-journal",
+  "title": "Learning skillful medium-range global weather forecasting",
+  "author": [
+   {
+    "family": "Lam",
+    "given": "Remi"
+   },
+   {
+    "literal": "외"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2023
+    ]
+   ]
+  },
+  "lab": {
+   "work": "lab:work/lam2023graphcast",
+   "role": "background",
+   "supports": [
+    "lab:claim/graphcast-cyclone"
+   ],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": true,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "웹 검색으로 Google DeepMind 블로그(Science 논문 소개)와 대조 (2026-11-23)",
+   "checkedSource": "web"
+  },
+  "container-title": "Science"
+ },
+ {
+  "id": "bi2023pangu",
+  "type": "article-journal",
+  "title": "Accurate medium-range global weather forecasting with 3D neural networks",
+  "author": [
+   {
+    "family": "Bi",
+    "given": "Kaifeng"
+   },
+   {
+    "family": "Xie",
+    "given": "Lingxi"
+   },
+   {
+    "family": "Zhang",
+    "given": "Hengheng"
+   },
+   {
+    "family": "Chen",
+    "given": "Xin"
+   },
+   {
+    "family": "Gu",
+    "given": "Xiaotao"
+   },
+   {
+    "family": "Tian",
+    "given": "Qi"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2023
+    ]
+   ]
+  },
+  "lab": {
+   "work": "lab:work/bi2023pangu",
+   "role": "background",
+   "supports": [
+    "lab:claim/pangu-speed"
+   ],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": true,
+    "pages": true,
+    "doi": true
+   },
+   "checkedBy": "웹 검색으로 원문 페이지와 대조 (2026-11-23)",
+   "checkedSource": "web"
+  },
+  "container-title": "Nature",
+  "volume": "619",
+  "page": "533-538",
+  "DOI": "10.1038/s41586-023-06185-3"
+ },
+ {
+  "id": "price2025gencast",
+  "type": "article-journal",
+  "title": "Probabilistic weather forecasting with machine learning",
+  "author": [
+   {
+    "family": "Price",
+    "given": "Ilan"
+   },
+   {
+    "literal": "외"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2025
+    ]
+   ]
+  },
+  "lab": {
+   "work": "lab:work/price2025gencast",
+   "role": "background",
+   "supports": [
+    "lab:claim/gencast-972"
+   ],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": true,
+    "pages": false,
+    "doi": true
+   },
+   "checkedBy": "웹 검색으로 원문 페이지와 대조 (2026-11-23)",
+   "checkedSource": "web"
+  },
+  "container-title": "Nature",
+  "DOI": "10.1038/s41586-024-08252-9"
+ },
+ {
+  "id": "ecmwf2025aifs",
+  "type": "webpage",
+  "title": "ECMWF's ensemble AI forecasts become operational",
+  "author": [
+   {
+    "literal": "ECMWF"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2025
+    ]
+   ]
+  },
+  "lab": {
+   "work": "lab:work/ecmwf2025aifs",
+   "role": "background",
+   "supports": [
+    "lab:claim/aifs-operational"
+   ],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": false,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "웹 검색으로 원문 페이지와 대조 (2026-11-23)",
+   "checkedSource": "web"
+  },
+  "URL": "https://www.ecmwf.int/en/about/media-centre/news/2025/ecmwfs-ensemble-ai-forecasts-become-operational"
+ },
+ {
+  "id": "lorenz1963",
+  "type": "article-journal",
+  "title": "Deterministic nonperiodic flow",
+  "author": [
+   {
+    "family": "Lorenz",
+    "given": "Edward N."
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1963
+    ]
+   ]
+  },
+  "lab": {
+   "work": "lab:work/lorenz1963",
+   "role": "background",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": true,
+    "pages": true,
+    "doi": false
+   },
+   "checkedBy": "작성자 지식, 외부 대조 안 함",
+   "checkedSource": "page"
+  },
+  "container-title": "Journal of the Atmospheric Sciences",
+  "volume": "20",
+  "page": "130-141"
+ }
+]

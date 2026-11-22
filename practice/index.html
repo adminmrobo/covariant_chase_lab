@@ -70,11 +70,20 @@ input[type=range]{width:100%;height:40px;margin:0}
 footer{border-top:1px solid var(--rule);padding:24px 0 60px;color:var(--muted);font-size:14px}
 button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #f2b705;outline-offset:2px}
 .stamp{font-size:12px;font-weight:700;color:var(--amber);background:var(--amber-soft);border-radius:999px;padding:2px 10px;display:inline-block}
+figure.scene{margin:14px 0;border:1px solid var(--rule);border-radius:16px;overflow:hidden;background:#fff;max-width:880px}
+figure.scene .frame{position:relative;aspect-ratio:16/7;background:linear-gradient(160deg,#f3f6fa,#fff)}
+figure.scene .frame>img.sc{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+figure.scene .scfb{position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:center;gap:clamp(4px,2vw,18px);padding-bottom:5%}
+figure.scene .scfb img{width:clamp(48px,10vw,96px);height:auto}
+figure.scene .chip{position:absolute;left:12px;top:12px;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;background:var(--amber-soft);color:var(--amber)}
+figure.scene figcaption{padding:8px 14px;font-size:14px;color:var(--muted);border-top:1px solid var(--rule)}
+figure.scene.has-img .scfb,figure.scene.has-img .chip{display:none}
 </style></head><body>
 <header><div class="wrap">
 <span class="kicker">마지막 장 · 실전 연습장</span>
 <h1>실전 연습장 — 다섯 현장에서 진짜 변화 재기</h1>
 <p class="lead">본문의 다섯 단계를 가상 현장에서 직접 운영해 봅니다. <b style="color:var(--gfp)">초록 막대</b>는 현장 조건, <b style="color:var(--info)">파란 막대</b>는 내 결정입니다. 성적표와 그래프를 보며 미션 세 개를 풀어 보세요.</p>
+<figure class="scene" data-img="pr_01"><div class="frame"><div class="scfb"><img data-who="robo" data-mood="calc" alt="" aria-hidden="true"><img data-who="asst" data-mood="report" alt="" aria-hidden="true"><img data-who="doc" data-mood="board" alt="" aria-hidden="true"><img data-who="fly" data-mood="point" alt="" aria-hidden="true"></div><span class="chip">장면 그림 준비 중 · pr_01</span></div><figcaption>실전 연습장 — 관제탑·작업대·항법 컴퓨터·측량·항공 노선, 다섯 현장의 조종석에 앉은 연구실 식구들.</figcaption></figure>
 <p class="back"><a href="../index.html#map">← 본문 큰 그림으로 돌아가기</a> · <a href="typhoon.html">부록 · 태풍 진로는 왜 어려울까 (헬게이트 포함) →</a> · <span class="stamp">숫자는 교육용 예시 · 실제 운항·측량 지침 아님</span></p>
 </div></header>
 <nav class="tabs" aria-label="현장 고르기"><div class="row" role="tablist" id="tabs"></div></nav>
@@ -284,6 +293,7 @@ tabs.addEventListener('click',function(e){var b=e.target.closest('button');if(!b
 window.addEventListener('hashchange',function(){show(location.hash.slice(1))});
 window.addEventListener('resize',function(){if(cur)upd(cur)});
 show(location.hash.slice(1));
+document.querySelectorAll('img[data-who]').forEach(function(i){if(!i.src)i.src=src(i.dataset.who,i.dataset.mood||'')});document.querySelectorAll('figure.scene').forEach(function(f){var k=f.dataset.img,im=new Image();im.onload=function(){im.className='sc';im.alt=f.querySelector('figcaption').textContent;f.querySelector('.frame').prepend(im);f.classList.add('has-img')};im.src='../assets/img/'+k+'.webp'});
 window.__SC=SC;window.__upd=upd;window.__show=show;
 })();
 

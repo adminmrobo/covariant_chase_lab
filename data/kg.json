@@ -953,6 +953,98 @@
    "confidence": "high",
    "coverage": "explained",
    "match": []
+  },
+  {
+   "id": "lab:concept/weather-forecasting",
+   "type": "Concept",
+   "label": {
+    "ko": "기상 예측",
+    "en": "Weather forecasting"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#sum",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "mentioned",
+   "family": "probability",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "대기의 지금 상태에서 앞으로의 날씨를 계산해 내는 일. 부록 · 태풍 편에서 자세히 다룬다."
+   }
+  },
+  {
+   "id": "lab:concept/tropical-cyclone-track-forecast",
+   "type": "Concept",
+   "label": {
+    "ko": "태풍 진로 예보",
+    "en": "Tropical cyclone track forecasting"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#sum",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "mentioned",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "태풍 중심이 앞으로 어디로 갈지 예보하는 일. 둥근 지구 위의 길(측지선)과 코리올리 효과가 함께 작용한다."
+   }
+  },
+  {
+   "id": "lab:method/ai-weather-prediction",
+   "type": "Method",
+   "label": {
+    "ko": "기상 인공지능",
+    "en": "Machine-learning weather prediction"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#sum",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "mentioned",
+   "family": "time-series",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "재분석 자료로 학습해 날씨를 예보하는 AI 모델. 구면 위 데이터를 다뤄야 한다."
+   }
+  },
+  {
+   "id": "lab:concept/coriolis-effect",
+   "type": "Concept",
+   "label": {
+    "ko": "코리올리 효과",
+    "en": "Coriolis effect"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#sum",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "mentioned",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "돌고 있는 지구 위에서 보면 움직이는 공기가 옆으로 휘어 보이는 겉보기 효과."
+   }
   }
  ],
  "edges": [
@@ -1374,6 +1466,62 @@
    "p": "lab:assertedIn",
    "o": "lab:work/pop-covariant-infographic",
    "anchor": "#export",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/weather-forecasting",
+   "p": "lab:broader",
+   "o": "lab:topic/time-series",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/tropical-cyclone-track-forecast",
+   "p": "lab:partOf",
+   "o": "lab:concept/weather-forecasting",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/ai-weather-prediction",
+   "p": "lab:broader",
+   "o": "lab:topic/time-series",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/ai-weather-prediction",
+   "p": "lab:partOf",
+   "o": "lab:concept/weather-forecasting",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/coriolis-effect",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/geodesic",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/tropical-cyclone-track-forecast",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/coriolis-effect",
+   "p": "lab:analogyOf",
+   "o": "lab:concept/fake-change",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/great-circle-route",
+   "p": "lab:relatedTo",
+   "o": "lab:concept/tropical-cyclone-track-forecast",
+   "anchor": "#sum",
    "confidence": "high"
   }
  ]

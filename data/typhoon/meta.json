@@ -1,0 +1,39 @@
+{
+ "title": "부록 · 태풍 진로는 왜 맞히기 어려울까 — 그리고 헬게이트: 행성 태풍",
+ "number": "A1",
+ "series": "주판봇의 초파리 추적 대작전",
+ "about": [
+  "lab:concept/tropical-cyclone-track-forecast",
+  "lab:concept/weather-forecasting",
+  "lab:method/ai-weather-prediction",
+  "lab:concept/ensemble-forecast"
+ ],
+ "basedOn": [
+  "jma2026track",
+  "price2025gencast"
+ ],
+ "educationalLevel": "입문",
+ "creator": [
+  {
+   "name": "안상선",
+   "role": "author"
+  }
+ ],
+ "contributor": [
+  {
+   "name": "AI 보조 제작",
+   "role": "assistant"
+  }
+ ],
+ "date": "2026-11-23",
+ "version": "1.0",
+ "language": [
+  "ko"
+ ],
+ "license": "",
+ "url": "https://adminmrobo.github.io/covariant_chase_lab/practice/typhoon.html",
+ "registry": "KG_00_registry 0.2",
+ "learningResourceType": "interactive explainer",
+ "seeAlso": "https://adminmrobo.github.io/covariant_chase_lab/",
+ "suggestedCitation": "안상선 (2026). 부록 · 태풍 진로는 왜 맞히기 어려울까 — 그리고 헬게이트: 행성 태풍. 주판봇의 초파리 추적 대작전 A1, v1.0."
+}
