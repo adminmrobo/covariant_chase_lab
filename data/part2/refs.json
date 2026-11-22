@@ -172,10 +172,10 @@
  {
   "id": "arxiv2206-15077",
   "type": "article",
-  "title": "Rigid-body attitude control: overview (arXiv:2206.15077)",
+  "title": "A perspective on Attitude Control Issues and Techniques",
   "author": [
    {
-    "literal": "arXiv:2206.15077 저자"
+    "literal": "arXiv:2206.15077 저자 3인"
    }
   ],
   "issued": {
@@ -201,7 +201,7 @@
     "pages": false,
     "doi": false
    },
-   "checkedBy": "웹 검색 발췌로 내용만 대조, 서지 미확인",
+   "checkedBy": "웹 검색으로 제목·연도 대조, 저자 이름 미확인 (2026-11-23)",
    "checkedSource": "web"
   }
  },
@@ -211,7 +211,12 @@
   "title": "Quaternions and Attitude Representation",
   "author": [
    {
-    "literal": "arXiv:1708.08680 저자"
+    "family": "Parwana",
+    "given": "Hardik"
+   },
+   {
+    "family": "Kothari",
+    "given": "Mangal"
    }
   ],
   "issued": {
@@ -237,7 +242,7 @@
     "pages": false,
     "doi": false
    },
-   "checkedBy": "웹 검색 발췌로 내용만 대조, 서지 미확인",
+   "checkedBy": "웹 검색으로 원문과 대조 (2026-11-23)",
    "checkedSource": "web"
   }
  }
