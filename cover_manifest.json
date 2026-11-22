@@ -367,7 +367,7 @@
    "robot": "jupanbot-v2",
    "prompt_en": "2편 cover, 16:9, 16-bit RPG pixel art ... see docs/GENSPARK_요청서_3.md",
    "source_of": null,
-   "status": "pending"
+   "status": "ok"
   },
   {
    "id": "og_02",
@@ -377,11 +377,21 @@
     1200,
     630
    ],
-   "characters": [],
+   "characters": [
+    "jupanbot",
+    "fly",
+    "doc",
+    "asst",
+    "sia",
+    "moa",
+    "x1",
+    "x2",
+    "x3"
+   ],
    "robot": "jupanbot-v2",
    "prompt_en": null,
    "source_of": "cover_02",
-   "status": "pending"
+   "status": "ok"
   },
   {
    "id": "s2_01",
@@ -400,7 +410,7 @@
    "robot": "jupanbot-v2",
    "prompt_en": "16-bit RPG pixel art, 3:2 scene, order experiment ... see docs/GENSPARK_요청서_3.md",
    "source_of": null,
-   "status": "pending"
+   "status": "ok"
   },
   {
    "id": "s2_02",
@@ -419,7 +429,7 @@
    "robot": "jupanbot-v2",
    "prompt_en": "16-bit RPG pixel art, 3:2 scene, gimbal lock ... see docs/GENSPARK_요청서_3.md",
    "source_of": null,
-   "status": "pending"
+   "status": "ok"
   },
   {
    "id": "s2_03",
@@ -438,7 +448,7 @@
    "robot": "jupanbot-v2",
    "prompt_en": "16-bit RPG pixel art, 3:2 scene, rotation interpolation ... see docs/GENSPARK_요청서_3.md",
    "source_of": null,
-   "status": "pending"
+   "status": "ok"
   },
   {
    "id": "s2_04",
@@ -457,7 +467,7 @@
    "robot": "jupanbot-v2",
    "prompt_en": "16-bit RPG pixel art, 3:2 scene, cup trick quaternion ... see docs/GENSPARK_요청서_3.md",
    "source_of": null,
-   "status": "pending"
+   "status": "ok"
   },
   {
    "id": "s2_05",
@@ -476,7 +486,7 @@
    "robot": "jupanbot-v2",
    "prompt_en": "16-bit RPG pixel art, 3:2 scene, backflip chase ... see docs/GENSPARK_요청서_3.md",
    "source_of": null,
-   "status": "pending"
+   "status": "ok"
   },
   {
    "id": "s2_06",
@@ -501,7 +511,28 @@
    "robot": "jupanbot-v2",
    "prompt_en": "16-bit RPG pixel art, 3:2 scene, after verdict ... see docs/GENSPARK_요청서_3.md",
    "source_of": null,
-   "status": "pending"
+   "status": "ok"
+  },
+  {
+   "id": "thumb_02",
+   "role": "thumb",
+   "path": "assets/img/thumb_02.webp",
+   "size": [
+    600,
+    400
+   ],
+   "characters": [
+    "jupanbot",
+    "fly",
+    "doc",
+    "asst",
+    "sia",
+    "moa"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": null,
+   "source_of": "cover_02",
+   "status": "ok"
   }
  ],
  "updated": "2026-11-23"
