@@ -1,0 +1,165 @@
+[
+ {
+  "id": "pop-covariant-infographic",
+  "type": "graphic",
+  "title": "The geometry of the covariant derivative",
+  "author": [
+   {
+    "literal": "Philosophy of Physics"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2026
+    ]
+   ]
+  },
+  "lab": {
+   "work": "lab:work/pop-covariant-infographic",
+   "role": "primary",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": false,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "사용자가 준 인포그래픽 이미지에서 옮김 (저자·연도 표기 없음, 연도는 받은 해)",
+   "checkedSource": "page"
+  }
+ },
+ {
+  "id": "carroll2004spacetime",
+  "type": "book",
+  "title": "Spacetime and Geometry: An Introduction to General Relativity",
+  "author": [
+   {
+    "family": "Carroll",
+    "given": "Sean M."
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2004
+    ]
+   ]
+  },
+  "publisher": "Addison Wesley",
+  "lab": {
+   "work": "lab:work/carroll2004spacetime",
+   "role": "background",
+   "supports": [
+    "lab:claim/spherical-excess",
+    "lab:claim/geodesic-60n",
+    "lab:claim/east-rotation",
+    "lab:claim/polar-gamma"
+   ],
+   "locs": [
+    "3장"
+   ],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": true,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "작성자 지식, 외부 대조 안 함",
+   "checkedSource": "page"
+  }
+ },
+ {
+  "id": "lee2010geometric",
+  "type": "paper-conference",
+  "title": "Geometric tracking control of a quadrotor UAV on SE(3)",
+  "author": [
+   {
+    "family": "Lee",
+    "given": "Taeyoung"
+   },
+   {
+    "family": "Leok",
+    "given": "Melvin"
+   },
+   {
+    "family": "McClamroch",
+    "given": "N. Harris"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2010
+    ]
+   ]
+  },
+  "container-title": "Proceedings of the 49th IEEE Conference on Decision and Control (CDC 2010)",
+  "page": "5420-5425",
+  "DOI": "10.1109/CDC.2010.5717652",
+  "lab": {
+   "work": "lab:work/lee2010geometric",
+   "role": "background",
+   "supports": [
+    "lab:claim/quadrotor-se3"
+   ],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": true,
+    "pages": true,
+    "doi": true
+   },
+   "checkedBy": "웹 검색으로 dblp·researchr 서지와 대조 (2026-11-22)",
+   "checkedSource": "web"
+  }
+ },
+ {
+  "id": "amari1998natural",
+  "type": "article-journal",
+  "title": "Natural gradient works efficiently in learning",
+  "author": [
+   {
+    "family": "Amari",
+    "given": "Shun-ichi"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1998
+    ]
+   ]
+  },
+  "container-title": "Neural Computation",
+  "volume": "10",
+  "issue": "2",
+  "page": "251-276",
+  "DOI": "10.1162/089976698300017746",
+  "lab": {
+   "work": "lab:work/amari1998natural",
+   "role": "background",
+   "supports": [
+    "lab:claim/natural-gradient-steepest"
+   ],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": true,
+    "pages": true,
+    "doi": true
+   },
+   "checkedBy": "웹 검색으로 Crossref·IEEE Xplore 서지와 대조 (2026-11-22)",
+   "checkedSource": "web"
+  }
+ }
+]

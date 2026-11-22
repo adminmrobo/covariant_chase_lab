@@ -1,0 +1,222 @@
+{
+ "series_ko": "주판봇의 초파리 추적 대작전",
+ "title_ko": "주판봇의 초파리 추적 대작전 ① — 진짜로 꺾인 만큼만 재기",
+ "site_title": "주판봇의 초파리 추적 대작전",
+ "site_url": "https://adminmrobo.github.io/covariant_chase_lab/",
+ "ontology": {
+  "pages": [
+   {
+    "path": "index.html",
+    "kg": true,
+    "export": true
+   }
+  ],
+  "files": [
+   "data/kg.json",
+   "data/refs.json",
+   "data/meta.json"
+  ]
+ },
+ "i18n": {
+  "langs": [
+   "ko"
+  ],
+  "pages": {
+   "ko": 1
+  },
+  "readme_langs": [
+   "ko"
+  ]
+ },
+ "languages": [
+  "ko"
+ ],
+ "items": [
+  {
+   "id": "cover_01",
+   "role": "cover",
+   "path": "assets/img/cover_01.webp",
+   "size": [
+    1600,
+    900
+   ],
+   "characters": [
+    "jupanbot",
+    "fly",
+    "doc",
+    "asst",
+    "sia",
+    "moa",
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "Website top cover, 16:9, 16-bit RPG pixel art, comedic: furious jupanbot held back by doc, asst, sia, moa; fruit fly dodging in the air; X1-X3 cheering behind ... see docs/COVER_01_covariant_chase.md",
+   "source_of": null,
+   "status": "todo"
+  },
+  {
+   "id": "og_01",
+   "role": "og",
+   "path": "assets/img/og_01.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot",
+    "sia",
+    "moa"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": null,
+   "source_of": "cover_01",
+   "status": "todo"
+  },
+  {
+   "id": "sc_01",
+   "role": "scene",
+   "embedded_in": "index.html",
+   "key": "figure[data-img=sc_01]",
+   "size": [
+    1200,
+    800
+   ],
+   "characters": [
+    "jupanbot",
+    "sia",
+    "moa",
+    "fly"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "16-bit RPG style pixel art, 3:2 scene ... see GENSPARK_요청서.md",
+   "source_of": null,
+   "status": "todo"
+  },
+  {
+   "id": "sc_02",
+   "role": "scene",
+   "embedded_in": "index.html",
+   "key": "figure[data-img=sc_02]",
+   "size": [
+    1200,
+    800
+   ],
+   "characters": [
+    "asst",
+    "doc",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "16-bit RPG style pixel art, 3:2 scene ... see GENSPARK_요청서.md",
+   "source_of": null,
+   "status": "todo"
+  },
+  {
+   "id": "sc_03",
+   "role": "scene",
+   "embedded_in": "index.html",
+   "key": "figure[data-img=sc_03]",
+   "size": [
+    1200,
+    800
+   ],
+   "characters": [
+    "jupanbot",
+    "fly",
+    "moa"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "16-bit RPG style pixel art, 3:2 scene ... see GENSPARK_요청서.md",
+   "source_of": null,
+   "status": "todo"
+  },
+  {
+   "id": "sc_04",
+   "role": "scene",
+   "embedded_in": "index.html",
+   "key": "figure[data-img=sc_04]",
+   "size": [
+    1200,
+    800
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "16-bit RPG style pixel art, 3:2 scene ... see GENSPARK_요청서.md",
+   "source_of": null,
+   "status": "todo"
+  },
+  {
+   "id": "sc_05",
+   "role": "scene",
+   "embedded_in": "index.html",
+   "key": "figure[data-img=sc_05]",
+   "size": [
+    1200,
+    800
+   ],
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "moa"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "16-bit RPG style pixel art, 3:2 scene ... see GENSPARK_요청서.md",
+   "source_of": null,
+   "status": "todo"
+  },
+  {
+   "id": "sc_06",
+   "role": "scene",
+   "embedded_in": "index.html",
+   "key": "figure[data-img=sc_06]",
+   "size": [
+    1200,
+    800
+   ],
+   "characters": [
+    "fly",
+    "doc",
+    "x1",
+    "x2",
+    "x3",
+    "jupanbot",
+    "asst",
+    "sia",
+    "moa"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "16-bit RPG style pixel art, 3:2 scene ... see GENSPARK_요청서.md",
+   "source_of": null,
+   "status": "todo"
+  },
+  {
+   "id": "sc_07",
+   "role": "scene",
+   "embedded_in": "index.html",
+   "key": "figure[data-img=sc_07]",
+   "size": [
+    1200,
+    800
+   ],
+   "characters": [
+    "jupanbot",
+    "fly"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "16-bit RPG style pixel art, 3:2 scene ... see GENSPARK_요청서.md",
+   "source_of": null,
+   "status": "todo"
+  }
+ ],
+ "updated": "2026-11-23"
+}

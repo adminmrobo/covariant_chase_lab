@@ -1,0 +1,39 @@
+{
+ "title": "주판봇의 초파리 추적 대작전 ① — 진짜로 꺾인 만큼만 재기",
+ "number": "01",
+ "series": "주판봇의 초파리 추적 대작전",
+ "about": [
+  "lab:concept/covariant-derivative",
+  "lab:concept/parallel-transport",
+  "lab:concept/curvature",
+  "lab:concept/geodesic"
+ ],
+ "basedOn": [
+  "pop-covariant-infographic",
+  "carroll2004spacetime"
+ ],
+ "educationalLevel": "입문",
+ "creator": [
+  {
+   "name": "안상선",
+   "role": "author"
+  }
+ ],
+ "contributor": [
+  {
+   "name": "AI 보조 제작",
+   "role": "assistant"
+  }
+ ],
+ "date": "2026-11-22",
+ "version": "1.0",
+ "language": [
+  "ko"
+ ],
+ "license": "",
+ "url": "",
+ "registry": "KG_00_registry 0.2",
+ "learningResourceType": "interactive explainer",
+ "seeAlso": "",
+ "suggestedCitation": "안상선 (2026). 주판봇의 초파리 추적 대작전 ① — 진짜로 꺾인 만큼만 재기. 주판봇의 초파리 추적 대작전 01, v1.0."
+}

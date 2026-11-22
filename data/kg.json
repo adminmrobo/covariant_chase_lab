@@ -1,0 +1,1380 @@
+{
+ "version": "1.0",
+ "page": "01_covariant_chase",
+ "nodes": [
+  {
+   "id": "lab:concept/covariant-derivative",
+   "type": "Concept",
+   "label": {
+    "ko": "공변미분",
+    "en": "Covariant derivative"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "숫자(성분) 변화에서 눈금이 돈 몫을 빼고 남은 진짜 변화. ∇ = ∂ + Γ."
+   }
+  },
+  {
+   "id": "lab:concept/partial-derivative",
+   "type": "Concept",
+   "label": {
+    "ko": "편미분",
+    "en": "Partial derivative"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv1",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "한 방향으로만 조금 움직였을 때 성분 숫자가 바뀐 양."
+   }
+  },
+  {
+   "id": "lab:concept/curvilinear-coordinates",
+   "type": "Concept",
+   "label": {
+    "ko": "곡선좌표",
+    "en": "Curvilinear coordinates"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv1",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "눈금선이 곧지 않아 축 방향이 자리마다 달라지는 좌표. 극좌표가 대표 예."
+   }
+  },
+  {
+   "id": "lab:concept/polar-coordinates",
+   "type": "Concept",
+   "label": {
+    "ko": "극좌표",
+    "en": "Polar coordinates"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv1",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "자리를 기준점에서의 거리 r과 각도 θ로 부르는 방법."
+   }
+  },
+  {
+   "id": "lab:concept/christoffel-symbol",
+   "type": "Concept",
+   "label": {
+    "ko": "크리스토펠 기호",
+    "en": "Christoffel symbols"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "자리마다 눈금(기저)이 얼마나 도는지 적은 보정표. 계량을 미분해 구한다."
+   }
+  },
+  {
+   "id": "lab:concept/metric-tensor",
+   "type": "Concept",
+   "label": {
+    "ko": "계량",
+    "en": "Metric tensor"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "mentioned",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "그 자리에서 길이와 각도를 재는 자 눈금 규칙."
+   }
+  },
+  {
+   "id": "lab:concept/parallel-transport",
+   "type": "Concept",
+   "label": {
+    "ko": "평행이동",
+    "en": "Parallel transport"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "화살표를 꺾지 않고 길을 따라 옮기는 것."
+   }
+  },
+  {
+   "id": "lab:concept/curvature",
+   "type": "Concept",
+   "label": {
+    "ko": "곡률",
+    "en": "Curvature"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv4",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "닫힌 길로 평행이동하고 돌아왔을 때 화살표가 돌아간 정도. 좌표로 지울 수 없다."
+   }
+  },
+  {
+   "id": "lab:concept/geodesic",
+   "type": "Concept",
+   "label": {
+    "ko": "측지선",
+    "en": "Geodesic"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv5",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "진행 방향 화살표의 공변미분이 0인 길. 휘어진 면 위에서 가장 곧은 길."
+   }
+  },
+  {
+   "id": "lab:concept/great-circle-route",
+   "type": "Concept",
+   "label": {
+    "ko": "대권항로",
+    "en": "Great-circle route"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv5",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "지구본 위의 측지선."
+   }
+  },
+  {
+   "id": "lab:concept/gimbal-lock",
+   "type": "Concept",
+   "label": {
+    "ko": "짐벌락",
+    "en": "Gimbal lock"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#next",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "피치 ±90°에서 요 축과 롤 축이 겹쳐 자유도 하나를 잃는 현상."
+   }
+  },
+  {
+   "id": "lab:method/natural-gradient",
+   "type": "Method",
+   "label": {
+    "ko": "자연경사",
+    "en": "Natural gradient"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#sum",
+   "level": 4,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "mentioned",
+   "family": "optimization",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:method/geometric-control",
+   "type": "Method",
+   "label": {
+    "ko": "기하학적 제어",
+    "en": "Geometric control on SE(3)"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#sum",
+   "level": 4,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "mentioned",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/fake-change",
+   "type": "Concept",
+   "label": {
+    "ko": "가짜 변화 (눈금이 돈 몫)",
+    "en": "Coordinate-induced change"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv1",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "definition": {
+    "ko": "화살표가 그대로인데 좌표축이 돌아서 성분 숫자만 바뀌는 것."
+   }
+  },
+  {
+   "id": "lab:limitation/partial-misses-basis",
+   "type": "Limitation",
+   "label": {
+    "ko": "편미분은 눈금 회전을 놓친다",
+    "en": "Partial derivative ignores basis rotation"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:limitation/christoffel-needs-flat-reference",
+   "type": "Limitation",
+   "label": {
+    "ko": "보정표는 평평한 기준이 있을 때 쉽다",
+    "en": "Christoffel correction relies on coordinate reference"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv2",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:limitation/path-dependence",
+   "type": "Limitation",
+   "label": {
+    "ko": "평행이동은 길에 따라 달라질 수 있다",
+    "en": "Parallel transport is path dependent"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv3",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:limitation/euler-angle-singularity",
+   "type": "Limitation",
+   "label": {
+    "ko": "세 각도 표현의 특이점",
+    "en": "Euler-angle singularity"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#next",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:claim/spherical-excess",
+   "type": "Claim",
+   "label": {
+    "ko": "구면 삼각형 각 초과 = 넓이 ÷ R² (Δ=90°면 세 각 합 270°)",
+    "en": "Spherical excess equals area over R squared"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "carroll2004spacetime",
+     "loc": "3장"
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/geodesic-60n",
+   "type": "Claim",
+   "label": {
+    "ko": "북위 60° 반대편까지 측지선 6,672 km, 위도선 10,008 km",
+    "en": "Geodesic vs parallel at 60N"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv5",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "carroll2004spacetime",
+     "loc": "3장 (이 페이지 계산)"
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/east-rotation",
+   "type": "Claim",
+   "label": {
+    "ko": "동쪽 화살표 평행이동 회전량 = 경도차 × sin(위도)",
+    "en": "Rotation of east vector along a parallel"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "carroll2004spacetime",
+     "loc": "3장 (이 페이지 계산)"
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/polar-gamma",
+   "type": "Claim",
+   "label": {
+    "ko": "극좌표에서 Γ^r_θθ = −r, Γ^θ_rθ = 1/r",
+    "en": "Polar Christoffel symbols"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "carroll2004spacetime",
+     "loc": "3장"
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/quadrotor-se3",
+   "type": "Claim",
+   "label": {
+    "ko": "쿼드로터 자세를 SE(3) 위에서 다루는 기하학적 추적 제어",
+    "en": "Geometric tracking control of a quadrotor on SE(3)"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#sum",
+   "level": 4,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "mentioned",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "lee2010geometric",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/natural-gradient-steepest",
+   "type": "Claim",
+   "label": {
+    "ko": "파라미터 공간에 구조가 있으면 자연경사가 가장 가파른 방향",
+    "en": "Natural gradient gives steepest direction"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#sum",
+   "level": 4,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "mentioned",
+   "family": "optimization",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "amari1998natural",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:sim/p01-radar",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 ① 레이더 오작동",
+    "en": "Radar malfunction game"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/p01-gamma",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 ② 보정표 계산기",
+    "en": "Christoffel calculator"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/p01-meter",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 ③ 공변미분 측정기",
+    "en": "Covariant derivative meter"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/p01-loop",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 ④ 지구본 한 바퀴",
+    "en": "Holonomy loop"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/p01-chase",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 ⑤ 측지선 추격전",
+    "en": "Geodesic chase"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv5",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/p01-drone",
+   "type": "Simulation",
+   "label": {
+    "ko": "미리 해 보기 드론 짐벌락",
+    "en": "Drone gimbal lock"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#next",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/p01-lv1-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "둘레 성분 v_θ 계산",
+    "en": "둘레 성분 v_θ 계산"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/p01-lv1-2",
+   "type": "QuizItem",
+   "label": {
+    "ko": "주판봇 방식이 휜 까닭",
+    "en": "주판봇 방식이 휜 까닭"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/p01-lv2-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "숫자 변화+보정=0",
+    "en": "숫자 변화+보정=0"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/p01-lv2-2",
+   "type": "QuizItem",
+   "label": {
+    "ko": "극좌표 Γ가 0이 아닌 까닭",
+    "en": "극좌표 Γ가 0이 아닌 까닭"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/p01-lv3-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "회전량 계산",
+    "en": "회전량 계산"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/p01-lv3-2",
+   "type": "QuizItem",
+   "label": {
+    "ko": "언제나 동쪽이 직진인 곳",
+    "en": "언제나 동쪽이 직진인 곳"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/p01-lv4-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "세 각의 합",
+    "en": "세 각의 합"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/p01-lv4-2",
+   "type": "QuizItem",
+   "label": {
+    "ko": "곡률과 Γ의 차이",
+    "en": "곡률과 Γ의 차이"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/p01-lv5-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "측지선 길이",
+    "en": "측지선 길이"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv5",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/p01-lv5-2",
+   "type": "QuizItem",
+   "label": {
+    "ko": "측지선 식",
+    "en": "측지선 식"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#lv5",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "math",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:question/curvature-in-learning",
+   "type": "Question",
+   "label": {
+    "ko": "학습의 파라미터 공간 곡률을 실제로 얼마나 활용할 수 있나",
+    "en": "How much can curvature of parameter space be exploited in practice"
+   },
+   "page": "01_covariant_chase",
+   "anchor": "#sum",
+   "level": 4,
+   "status": "known",
+   "confidence": "medium",
+   "coverage": "mentioned",
+   "family": "optimization",
+   "match": [],
+   "domain": [
+    "math",
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:work/carroll2004spacetime",
+   "type": "Work",
+   "label": {
+    "ko": "Carroll (2004) Spacetime and Geometry",
+    "en": "Spacetime and Geometry"
+   },
+   "page": "01",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/lee2010geometric",
+   "type": "Work",
+   "label": {
+    "ko": "Lee 외 (2010) CDC",
+    "en": "Geometric tracking control of a quadrotor UAV on SE(3)"
+   },
+   "page": "01",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/amari1998natural",
+   "type": "Work",
+   "label": {
+    "ko": "Amari (1998) Neural Computation",
+    "en": "Natural gradient works efficiently in learning"
+   },
+   "page": "01",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/pop-covariant-infographic",
+   "type": "Work",
+   "label": {
+    "ko": "원자료 인포그래픽 (Philosophy of Physics)",
+    "en": "The geometry of the covariant derivative"
+   },
+   "page": "01",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:quiz/p01-lv1-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/partial-derivative",
+   "anchor": "#lv1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/p01-lv1-2",
+   "p": "lab:assesses",
+   "o": "lab:concept/fake-change",
+   "anchor": "#lv1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/p01-lv2-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/covariant-derivative",
+   "anchor": "#lv2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/p01-lv2-2",
+   "p": "lab:assesses",
+   "o": "lab:concept/christoffel-symbol",
+   "anchor": "#lv2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/p01-lv3-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/parallel-transport",
+   "anchor": "#lv3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/p01-lv3-2",
+   "p": "lab:assesses",
+   "o": "lab:concept/parallel-transport",
+   "anchor": "#lv3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/p01-lv4-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/curvature",
+   "anchor": "#lv4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/p01-lv4-2",
+   "p": "lab:assesses",
+   "o": "lab:concept/curvature",
+   "anchor": "#lv4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/p01-lv5-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/geodesic",
+   "anchor": "#lv5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/p01-lv5-2",
+   "p": "lab:assesses",
+   "o": "lab:concept/geodesic",
+   "anchor": "#lv5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/covariant-derivative",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#map",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/partial-derivative",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#map",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/curvilinear-coordinates",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#map",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/christoffel-symbol",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#map",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/metric-tensor",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#map",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/parallel-transport",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#map",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/curvature",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#map",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/geodesic",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#map",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/gimbal-lock",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#map",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/fake-change",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#map",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/polar-coordinates",
+   "p": "lab:broader",
+   "o": "lab:concept/curvilinear-coordinates",
+   "anchor": "#lv1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/great-circle-route",
+   "p": "lab:broader",
+   "o": "lab:concept/geodesic",
+   "anchor": "#lv5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/natural-gradient",
+   "p": "lab:broader",
+   "o": "lab:topic/gradient-descent",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/geometric-control",
+   "p": "lab:broader",
+   "o": "lab:topic/calculus-optimization-math",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/partial-derivative",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/covariant-derivative",
+   "anchor": "#lv2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/christoffel-symbol",
+   "p": "lab:partOf",
+   "o": "lab:concept/covariant-derivative",
+   "anchor": "#lv2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/metric-tensor",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/christoffel-symbol",
+   "anchor": "#lv2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/parallel-transport",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/curvature",
+   "anchor": "#lv4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/covariant-derivative",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/geodesic",
+   "anchor": "#lv5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/parallel-transport",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/geodesic",
+   "anchor": "#lv5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/christoffel-symbol",
+   "p": "lab:contrastsWith",
+   "o": "lab:concept/curvature",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/partial-derivative",
+   "p": "lab:hasLimitation",
+   "o": "lab:limitation/partial-misses-basis",
+   "anchor": "#lv1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:limitation/partial-misses-basis",
+   "p": "lab:addressedBy",
+   "o": "lab:concept/christoffel-symbol",
+   "anchor": "#lv2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/christoffel-symbol",
+   "p": "lab:hasLimitation",
+   "o": "lab:limitation/christoffel-needs-flat-reference",
+   "anchor": "#lv2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:limitation/christoffel-needs-flat-reference",
+   "p": "lab:addressedBy",
+   "o": "lab:concept/parallel-transport",
+   "anchor": "#lv3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/parallel-transport",
+   "p": "lab:hasLimitation",
+   "o": "lab:limitation/path-dependence",
+   "anchor": "#lv3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:limitation/path-dependence",
+   "p": "lab:addressedBy",
+   "o": "lab:concept/curvature",
+   "anchor": "#lv4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/gimbal-lock",
+   "p": "lab:partOf",
+   "o": "lab:limitation/euler-angle-singularity",
+   "anchor": "#next",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:limitation/euler-angle-singularity",
+   "p": "lab:addressedBy",
+   "o": "lab:method/geometric-control",
+   "anchor": "#next",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/fake-change",
+   "p": "lab:partOf",
+   "o": "lab:limitation/partial-misses-basis",
+   "anchor": "#lv1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/spherical-excess",
+   "p": "lab:supports",
+   "o": "lab:concept/curvature",
+   "anchor": "#lv4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/spherical-excess",
+   "p": "lab:assertedIn",
+   "o": "lab:work/carroll2004spacetime",
+   "anchor": "#export",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/geodesic-60n",
+   "p": "lab:supports",
+   "o": "lab:concept/geodesic",
+   "anchor": "#lv5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/geodesic-60n",
+   "p": "lab:assertedIn",
+   "o": "lab:work/carroll2004spacetime",
+   "anchor": "#export",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/east-rotation",
+   "p": "lab:supports",
+   "o": "lab:concept/parallel-transport",
+   "anchor": "#lv3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/east-rotation",
+   "p": "lab:assertedIn",
+   "o": "lab:work/carroll2004spacetime",
+   "anchor": "#export",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/polar-gamma",
+   "p": "lab:supports",
+   "o": "lab:concept/christoffel-symbol",
+   "anchor": "#lv2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/polar-gamma",
+   "p": "lab:assertedIn",
+   "o": "lab:work/carroll2004spacetime",
+   "anchor": "#export",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/quadrotor-se3",
+   "p": "lab:supports",
+   "o": "lab:method/geometric-control",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/quadrotor-se3",
+   "p": "lab:assertedIn",
+   "o": "lab:work/lee2010geometric",
+   "anchor": "#export",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/natural-gradient-steepest",
+   "p": "lab:supports",
+   "o": "lab:method/natural-gradient",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/natural-gradient-steepest",
+   "p": "lab:assertedIn",
+   "o": "lab:work/amari1998natural",
+   "anchor": "#export",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/fake-change",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/p01-radar",
+   "anchor": "#lv1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/christoffel-symbol",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/p01-gamma",
+   "anchor": "#lv2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/covariant-derivative",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/p01-meter",
+   "anchor": "#lv3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/curvature",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/p01-loop",
+   "anchor": "#lv4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/geodesic",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/p01-chase",
+   "anchor": "#lv5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/gimbal-lock",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/p01-drone",
+   "anchor": "#next",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/natural-gradient",
+   "p": "lab:raises",
+   "o": "lab:question/curvature-in-learning",
+   "anchor": "#sum",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/covariant-derivative",
+   "p": "lab:assertedIn",
+   "o": "lab:work/pop-covariant-infographic",
+   "anchor": "#export",
+   "confidence": "high"
+  }
+ ]
+}
