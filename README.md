@@ -4,12 +4,14 @@
 
 - 본문: [index.html](https://adminmrobo.github.io/covariant_chase_lab/) — 다섯 단계(① 레이더 오작동 ② 보정표 Γ ③ 평행이동 ④ 곡률 ⑤ 측지선), 단계마다 게임형 실험, 대결, 2편 예고(드론 짐벌락), 지식 색인·꾸러미
 - 부록: [practice/index.html](https://adminmrobo.github.io/covariant_chase_lab/practice/) — 마지막 장 · 실전 연습장. 단계마다 가상 현장 대시보드 게임(관제탑 레이더실 · 회전 작업대 공장 · 항법 컴퓨터 · 측량 회사 · 항공 노선 기획), 미션 3개씩
+- 부록: [practice/typhoon.html](https://adminmrobo.github.io/covariant_chase_lab/practice/typhoon.html) — 태풍 진로는 왜 맞히기 어려울까(다섯 가지 까닭, 일본기상청 평균 오차) + 예보 게임 2종: 지구 태풍 예보 센터, 헬게이트 난이도 행성 태풍(화성·목성·토성·해왕성)
 
 ## 폴더
 | 경로 | 내용 |
 |---|---|
 | `index.html` | 본문 (단일 파일, 캐릭터 그림 내장) |
 | `practice/index.html` | 실전 연습장 |
+| `practice/typhoon.html` | 부록 · 태풍 편 (헬게이트 포함) |
 | `assets/img/` | 표지·장면 그림 자리 (Genspark로 받은 뒤 WebP로 넣음) |
 | `docs/` | 표지 지시문, 이미지 명세서, Genspark 요청서 |
 | `data/` | 지식 색인(kg), 문헌(refs), 메타데이터 |
