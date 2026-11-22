@@ -27,3 +27,9 @@ doc: front · board · think · magic · judge / asst: smile · report · firm �
 
 ## 4. 장면 프롬프트
 `GENSPARK_요청서.md`에 모았습니다. 실전 연습장(`practice/index.html`)의 그래프·구조 그림은 코드로 그리므로 그림이 필요 없습니다.
+
+
+## 5. 받은 그림 (2026-11-23)
+- 1차(GS01): cover_01, sc_01~sc_07 — sc_06은 초파리 누락으로 다시 그림
+- 2차(GS02): sc_06(초파리 복귀), ty_01~ty_03(부록 · 태풍 편), pr_01(실전 연습장 머리)
+- 모두 `assets/img/`에 WebP로 반영, og_01·thumb_01은 표지에서 자름

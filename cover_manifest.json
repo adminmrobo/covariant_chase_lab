@@ -210,7 +210,7 @@
    "robot": "jupanbot-v2",
    "prompt_en": "16-bit RPG style pixel art, 3:2 scene ... see GENSPARK_요청서.md",
    "source_of": null,
-   "status": "redraw",
+   "status": "ok",
    "path": "assets/img/sc_06.webp"
   },
   {
@@ -270,7 +270,8 @@
    "robot": "jupanbot-v2",
    "prompt_en": "16-bit RPG style pixel art ... see docs/GENSPARK_요청서_2.md",
    "source_of": null,
-   "status": "todo"
+   "status": "ok",
+   "path": "assets/img/ty_01.webp"
   },
   {
    "id": "ty_02",
@@ -289,7 +290,8 @@
    "robot": "jupanbot-v2",
    "prompt_en": "16-bit RPG style pixel art ... see docs/GENSPARK_요청서_2.md",
    "source_of": null,
-   "status": "todo"
+   "status": "ok",
+   "path": "assets/img/ty_02.webp"
   },
   {
    "id": "ty_03",
@@ -310,7 +312,8 @@
    "robot": "jupanbot-v2",
    "prompt_en": "16-bit RPG style pixel art ... see docs/GENSPARK_요청서_2.md",
    "source_of": null,
-   "status": "todo"
+   "status": "ok",
+   "path": "assets/img/ty_03.webp"
   },
   {
    "id": "pr_01",
@@ -330,7 +333,8 @@
    "robot": "jupanbot-v2",
    "prompt_en": "16-bit RPG style pixel art ... see docs/GENSPARK_요청서_2.md",
    "source_of": null,
-   "status": "todo"
+   "status": "ok",
+   "path": "assets/img/pr_01.webp"
   }
  ],
  "updated": "2026-11-23"
