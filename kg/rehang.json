@@ -1,0 +1,242 @@
+{
+ "version": "1.0",
+ "made": "2026-11-24",
+ "via": "rehang-2026-11-24",
+ "domains": [
+  "geom",
+  "math"
+ ],
+ "note": "분야 뼈대 주제에 다시 걸기(ai-lab-retrofit 15장). links는 자동 후보이며 틀린 줄은 지우면 된다. 빌드 스크립트가 있는 저장소는 빌드 끝에 rehang.apply_overlay()가 이 파일을 적용한다.",
+ "topics": {
+  "lab:topic/coordinates": {
+   "ko": "좌표계",
+   "en": "Coordinate systems",
+   "domain": [
+    "geom"
+   ],
+   "level": 1
+  },
+  "lab:topic/covariant-derivative": {
+   "ko": "공변미분과 접속",
+   "en": "Covariant derivative and connection",
+   "domain": [
+    "geom"
+   ],
+   "level": 4
+  },
+  "lab:topic/curvature": {
+   "ko": "곡률",
+   "en": "Curvature",
+   "domain": [
+    "geom"
+   ],
+   "level": 4
+  },
+  "lab:topic/dynamical-systems-stability": {
+   "ko": "동역학계와 안정성",
+   "en": "Dynamical systems and stability",
+   "domain": [
+    "math"
+   ],
+   "level": 3
+  },
+  "lab:topic/geodesics": {
+   "ko": "측지선",
+   "en": "Geodesics",
+   "domain": [
+    "geom"
+   ],
+   "level": 4
+  },
+  "lab:topic/groups": {
+   "ko": "군",
+   "en": "Groups",
+   "domain": [
+    "math"
+   ],
+   "level": 3
+  },
+  "lab:topic/information-geometry": {
+   "ko": "정보 기하",
+   "en": "Information geometry",
+   "domain": [
+    "geom"
+   ],
+   "level": 4
+  },
+  "lab:topic/manifold": {
+   "ko": "다양체",
+   "en": "Manifold",
+   "domain": [
+    "geom"
+   ],
+   "level": 4
+  },
+  "lab:topic/numerical-integration": {
+   "ko": "수치 적분·미분방정식 풀이",
+   "en": "Numerical integration and ODE solvers",
+   "domain": [
+    "math"
+   ],
+   "level": 3
+  },
+  "lab:topic/parallel-transport": {
+   "ko": "평행 이동",
+   "en": "Parallel transport",
+   "domain": [
+    "geom"
+   ],
+   "level": 4
+  },
+  "lab:topic/partial-derivatives": {
+   "ko": "편미분",
+   "en": "Partial derivatives",
+   "domain": [
+    "math"
+   ],
+   "level": 2
+  },
+  "lab:topic/riemannian-metric": {
+   "ko": "리만 계량",
+   "en": "Riemannian metric",
+   "domain": [
+    "geom"
+   ],
+   "level": 4
+  },
+  "lab:topic/symmetry-group-action": {
+   "ko": "대칭과 군의 작용",
+   "en": "Symmetry and group actions",
+   "domain": [
+    "math"
+   ],
+   "level": 3
+  }
+ },
+ "links": {
+  "lab:concept/christoffel-symbol": {
+   "topic": "lab:topic/covariant-derivative",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "크리스토펠 기호"
+  },
+  "lab:concept/covariant-derivative": {
+   "topic": "lab:topic/covariant-derivative",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "공변미분"
+  },
+  "lab:concept/curvature": {
+   "topic": "lab:topic/curvature",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "곡률"
+  },
+  "lab:concept/curvilinear-coordinates": {
+   "topic": "lab:topic/coordinates",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "곡선좌표"
+  },
+  "lab:concept/euler-angles": {
+   "topic": "lab:topic/coordinates",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "오일러각 (요·피치·롤)"
+  },
+  "lab:concept/geodesic": {
+   "topic": "lab:topic/geodesics",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "측지선"
+  },
+  "lab:concept/great-circle-route": {
+   "topic": "lab:topic/geodesics",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "대권항로"
+  },
+  "lab:concept/metric-tensor": {
+   "topic": "lab:topic/riemannian-metric",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "계량"
+  },
+  "lab:concept/numerical-weather-prediction": {
+   "topic": "lab:topic/numerical-integration",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "수치예보"
+  },
+  "lab:concept/parallel-transport": {
+   "topic": "lab:topic/parallel-transport",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "평행이동"
+  },
+  "lab:concept/partial-derivative": {
+   "topic": "lab:topic/partial-derivatives",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "편미분"
+  },
+  "lab:concept/polar-coordinates": {
+   "topic": "lab:topic/coordinates",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "극좌표"
+  },
+  "lab:concept/rotation-geodesic": {
+   "topic": "lab:topic/geodesics",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "회전 공간의 측지선"
+  },
+  "lab:concept/rotation-group": {
+   "topic": "lab:topic/symmetry-group-action",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "회전들의 공간 SO(3)"
+  },
+  "lab:concept/rotation-noncommutativity": {
+   "topic": "lab:topic/groups",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "회전 순서의 비가환성"
+  },
+  "lab:concept/sensitive-dependence": {
+   "topic": "lab:topic/dynamical-systems-stability",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "처음 값에 민감한 성질 (나비 효과)"
+  },
+  "lab:concept/spherical-data": {
+   "topic": "lab:topic/manifold",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "구면 위의 데이터"
+  },
+  "lab:method/natural-gradient": {
+   "topic": "lab:topic/information-geometry",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "자연경사"
+  },
+  "lab:method/slerp": {
+   "topic": "lab:topic/geodesics",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "구면 선형 보간 (slerp)"
+  }
+ },
+ "retag": {
+  "from": [
+   "math",
+   "ai"
+  ],
+  "to": [
+   "geom",
+   "math"
+  ]
+ }
+}
