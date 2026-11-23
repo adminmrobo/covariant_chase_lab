@@ -78,7 +78,7 @@ figure.scene .scfb img{width:clamp(48px,10vw,96px);height:auto}
 figure.scene .chip{position:absolute;left:12px;top:12px;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;background:var(--amber-soft);color:var(--amber)}
 figure.scene figcaption{padding:8px 14px;font-size:14px;color:var(--muted);border-top:1px solid var(--rule)}
 figure.scene.has-img .scfb,figure.scene.has-img .chip{display:none}
-</style></head><body>
+</style><!-- px-fix v1 --><style id="px-fix">img{image-rendering:auto!important}</style><script id="px-fix-js">(function(){var R=window.ResizeObserver;function f(i){var n=i.naturalWidth,w=i.getBoundingClientRect().width;if(!n||!w)return;var s=w*(window.devicePixelRatio||1)/n;i.style.setProperty("image-rendering",s>=1.95?"pixelated":"auto","important")}var ro=R?new R(function(es){es.forEach(function(e){f(e.target)})}):null;function a(i){if(i.__px)return;i.__px=1;i.addEventListener("load",function(){f(i)});if(ro)ro.observe(i);f(i)}function all(r){(r||document).querySelectorAll&&(r||document).querySelectorAll("img").forEach(a)}function go(){all();if(window.MutationObserver)new MutationObserver(function(ms){ms.forEach(function(m){m.addedNodes.forEach(function(n){if(n.nodeType!==1)return;if(n.tagName==="IMG")a(n);else all(n)})})}).observe(document.documentElement,{childList:true,subtree:true});window.addEventListener("resize",function(){document.querySelectorAll("img").forEach(f)})}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",go);else go()})();</script><!-- /px-fix --></head><body>
 <header><div class="wrap">
 <span class="kicker">마지막 장 · 실전 연습장</span>
 <h1>실전 연습장 — 아홉 현장에서 진짜 변화 재기</h1>
