@@ -105,6 +105,7 @@ figure.scene.has-img .scfb,figure.scene.has-img .chip{display:none}
 .qi .opts{display:flex;flex-wrap:wrap;gap:8px}
 .qi .fb{margin:6px 0 0;font-size:15px}.qi .fb.ok{color:var(--gfp)}.qi .fb.no{color:var(--eye)}
 footer{border-top:1px solid var(--rule);padding:24px 0 60px;color:var(--muted);font-size:14px}
+footer p,footer a{overflow-wrap:anywhere}
 footer ol{padding-left:1.4em}footer li{overflow-wrap:anywhere}
 button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #f2b705;outline-offset:2px}
 </style><!-- lab-kg:head -->
@@ -614,8 +615,11 @@ var CSS='.kgx-sec{background:var(--bg,#13141f);color:var(--text,#eceaf3);padding
 .kgx .stats div{background:var(--panel,#1c1e2d);border:1px solid var(--rule,#363a52);border-radius:10px;padding:10px 12px}\
 .kgx .stats b{display:block;font-size:24px;font-variant-numeric:tabular-nums}.kgx .stats span{color:var(--muted,#9d9bb8);font-size:13px}\
 .kgx .say{display:flex;gap:12px;align-items:flex-start;margin:6px 0 14px}\
-.kgx .say .who{flex:none;width:44px;height:44px;border-radius:10px;display:grid;place-items:center;font-weight:700;font-size:13px;color:#13141f}\
-.kgx .say p{margin:0;background:var(--panel2,#25283a);border:1px solid var(--rule,#363a52);border-radius:12px;padding:10px 14px;font-size:15px}\
+.kgx .say img.who{width:64px;height:64px;flex:none;border-radius:12px;border:2px solid var(--c-asst,#ff86b8);background:#fff;padding:0}\
+.kgx .say>div{flex:1;min-width:0;background:var(--panel,#fff);border:1px solid var(--rule,#ddd);border-radius:14px;padding:8px 14px}\
+.kgx .say .name{display:block;font-size:14px;font-weight:700;color:var(--c-asst,#ff86b8)}\
+.kgx .say p{margin:0;font-size:15px;overflow-wrap:anywhere}\
+@media(max-width:520px){.kgx .say img.who{width:52px;height:52px}}\
 .kgx .refs .r{padding:12px 14px;border-bottom:1px solid var(--rule,#363a52)}.kgx .refs .r:last-child{border-bottom:0}\
 .kgx .badge{display:inline-block;font-size:11.5px;border-radius:5px;padding:0 6px;margin-left:6px;font-weight:700}\
 .kgx .badge.ok{background:var(--gfp,#5ee39c);color:#0d2419}.kgx .badge.no{background:transparent;border:1px solid var(--amber,#f1b646);color:var(--amber,#f1b646)}\
@@ -759,7 +763,7 @@ function mountExport(root){
   var sup={}; KG.edges.forEach(function(e){ if(e.p==='lab:assertedIn'){var k=e.o.replace('lab:work/',''); (sup[k]=sup[k]||[]).push(e.s);} });
   KG.nodes.forEach(function(n){(n.source||[]).forEach(function(s){(sup[s.ref]=sup[s.ref]||[]); if(sup[s.ref].indexOf(n.id)<0)sup[s.ref].push(n.id);});});
   var N={}; KG.nodes.forEach(function(n){N[n.id]=n;});
-  root.innerHTML='<div class="say"><div class="who" style="background:var(--c-asst,#ff86b8)">조수</div><p>출처 없는 주장은 꾸러미에 넣지 않았어요. 사람이 확인할 항목 '+todo.length+'개는 아래에 있어요.</p></div>'+
+  root.innerHTML='<div class="say" data-who="asst"><img class="who" data-who="asst" data-mood="report" alt="" aria-hidden="true" src="'+(function(){if(typeof SPRITE==="undefined")return "";var A=(typeof SPRITE_ALIAS!=="undefined")?SPRITE_ALIAS:{};var ks=["asst_report","asst_smile"];for(var i=0;i<ks.length;i++){var k=ks[i];if(SPRITE[k])return SPRITE[k];if(A[k]&&SPRITE[A[k]])return SPRITE[A[k]];}return "";})()+'"><div><b class="name">조수 하루</b><p>출처 없는 주장은 꾸러미에 넣지 않았어요. 사람이 확인할 항목 '+todo.length+'개는 아래에 있어요.</p></div></div>'+
     '<div class="stats"><div><b>'+KG.nodes.length+'</b><span>노드</span></div><div><b>'+KG.edges.length+'</b><span>관계</span></div><div><b>'+REF.length+'</b><span>문헌</span></div>'+
     '<div><b>'+Math.round(100*vb/Math.max(1,REF.length))+'%</b><span>서지 전부 확인된 문헌</span></div>'+
     '<div><b>'+Math.round(100*claims.filter(function(n){return (n.source||[]).length;}).length/Math.max(1,claims.length))+'%</b><span>출처 있는 주장</span></div></div>'+
